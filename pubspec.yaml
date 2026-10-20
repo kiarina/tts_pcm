@@ -3,8 +3,6 @@ description: >-
   Speech synthesis to 16-bit PCM with the OS voices (AVSpeechSynthesizer,
   Android TextToSpeech, Windows.Media.SpeechSynthesis). Nothing is played.
 version: 0.1.0
-# Removed right before the first `flutter pub publish`, once the owner approves.
-publish_to: none
 repository: https://github.com/kiarina/tts_pcm
 issue_tracker: https://github.com/kiarina/tts_pcm/issues
 topics:

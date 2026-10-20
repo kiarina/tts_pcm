@@ -1,4 +1,4 @@
-# tts_pcm (not published yet)
+# tts_pcm
 
 Speech synthesis to **16-bit PCM** with the OS voices, for macOS, iOS, Android and Windows.
 Nothing is played: the caller gets the audio and owns the speaker, so it knows exactly what was
