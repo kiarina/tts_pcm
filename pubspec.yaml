@@ -1,0 +1,43 @@
+name: tts_pcm
+description: >-
+  Speech synthesis to 16-bit PCM with the OS voices (AVSpeechSynthesizer,
+  Android TextToSpeech, Windows.Media.SpeechSynthesis). Nothing is played.
+version: 0.1.0
+# Removed right before the first `flutter pub publish`, once the owner approves.
+publish_to: none
+repository: https://github.com/kiarina/tts_pcm
+issue_tracker: https://github.com/kiarina/tts_pcm/issues
+topics:
+  - tts
+  - text-to-speech
+  - speech-synthesis
+  - audio
+  - pcm
+
+environment:
+  sdk: ^3.13.2
+  flutter: '>=3.47.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: jp.kiarina.tts_pcm
+        pluginClass: TtsPcmPlugin
+      ios:
+        pluginClass: TtsPcmPlugin
+        sharedDarwinSource: true
+      macos:
+        pluginClass: TtsPcmPlugin
+        sharedDarwinSource: true
+      windows:
+        pluginClass: TtsPcmPluginCApi

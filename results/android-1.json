@@ -1,0 +1,577 @@
+{
+    "platform": "android",
+    "voicesMs": 764,
+    "voiceCount": 474,
+    "jaVoices": [
+        {
+            "id": "ja-JP-language",
+            "name": "ja-JP-language",
+            "language": "ja-JP",
+            "quality": "high",
+            "gender": null,
+            "requiresNetwork": false,
+            "native": {
+                "quality": 400,
+                "latency": 200,
+                "features": [
+                    "legacySetLanguageVoice",
+                    "networkRetriesCount",
+                    "networkTimeoutMs"
+                ],
+                "notInstalled": false
+            }
+        },
+        {
+            "id": "ja-jp-x-jab-network",
+            "name": "ja-jp-x-jab-network",
+            "language": "ja-JP",
+            "quality": "high",
+            "gender": null,
+            "requiresNetwork": true,
+            "native": {
+                "quality": 400,
+                "latency": 200,
+                "features": [
+                    "networkRetriesCount",
+                    "networkTimeoutMs"
+                ],
+                "notInstalled": false
+            }
+        },
+        {
+            "id": "ja-jp-x-htm-network",
+            "name": "ja-jp-x-htm-network",
+            "language": "ja-JP",
+            "quality": "high",
+            "gender": null,
+            "requiresNetwork": true,
+            "native": {
+                "quality": 400,
+                "latency": 200,
+                "features": [
+                    "networkRetriesCount",
+                    "networkTimeoutMs"
+                ],
+                "notInstalled": false
+            }
+        },
+        {
+            "id": "ja-jp-x-jad-network",
+            "name": "ja-jp-x-jad-network",
+            "language": "ja-JP",
+            "quality": "high",
+            "gender": null,
+            "requiresNetwork": true,
+            "native": {
+                "quality": 400,
+                "latency": 200,
+                "features": [
+                    "networkRetriesCount",
+                    "networkTimeoutMs"
+                ],
+                "notInstalled": false
+            }
+        },
+        {
+            "id": "ja-jp-x-jab-local",
+            "name": "ja-jp-x-jab-local",
+            "language": "ja-JP",
+            "quality": "high",
+            "gender": null,
+            "requiresNetwork": false,
+            "native": {
+                "quality": 400,
+                "latency": 200,
+                "features": [
+                    "networkRetriesCount",
+                    "networkTimeoutMs"
+                ],
+                "notInstalled": false
+            }
+        },
+        {
+            "id": "ja-jp-x-jad-local",
+            "name": "ja-jp-x-jad-local",
+            "language": "ja-JP",
+            "quality": "high",
+            "gender": null,
+            "requiresNetwork": false,
+            "native": {
+                "quality": 400,
+                "latency": 200,
+                "features": [
+                    "networkRetriesCount",
+                    "networkTimeoutMs"
+                ],
+                "notInstalled": false
+            }
+        },
+        {
+            "id": "ja-jp-x-jac-local",
+            "name": "ja-jp-x-jac-local",
+            "language": "ja-JP",
+            "quality": "high",
+            "gender": null,
+            "requiresNetwork": false,
+            "native": {
+                "quality": 400,
+                "latency": 200,
+                "features": [
+                    "networkRetriesCount",
+                    "networkTimeoutMs"
+                ],
+                "notInstalled": false
+            }
+        },
+        {
+            "id": "ja-jp-x-jac-network",
+            "name": "ja-jp-x-jac-network",
+            "language": "ja-JP",
+            "quality": "high",
+            "gender": null,
+            "requiresNetwork": true,
+            "native": {
+                "quality": 400,
+                "latency": 200,
+                "features": [
+                    "networkRetriesCount",
+                    "networkTimeoutMs"
+                ],
+                "notInstalled": false
+            }
+        },
+        {
+            "id": "ja-jp-x-htm-local",
+            "name": "ja-jp-x-htm-local",
+            "language": "ja-JP",
+            "quality": "high",
+            "gender": null,
+            "requiresNetwork": false,
+            "native": {
+                "quality": 400,
+                "latency": 200,
+                "features": [
+                    "networkRetriesCount",
+                    "networkTimeoutMs"
+                ],
+                "notInstalled": false
+            }
+        }
+    ],
+    "enVoiceCount": 52,
+    "voiceFields": {
+        "quality": {
+            "high": 468,
+            "low": 6
+        },
+        "gender": {
+            "null": 474
+        },
+        "requiresNetwork": {
+            "false": 285,
+            "true": 189
+        },
+        "malformedLanguage": []
+    },
+    "runs": [
+        {
+            "firstChunkMs": 305,
+            "totalMs": 429,
+            "audioMs": 2951,
+            "realTimeFactor": 0.14537444933920704,
+            "chunks": 141,
+            "chunkSamples": {
+                "min": 54,
+                "max": 512
+            },
+            "sampleRate": 24000,
+            "nativeFormat": "int16 24000 Hz 1 ch",
+            "peakDbfs": -3.134316155234141,
+            "rmsDbfs": -17.54250351946586,
+            "leadingSilenceMs": 45,
+            "text": "ja-short",
+            "attempt": 0
+        },
+        {
+            "firstChunkMs": 18,
+            "totalMs": 47,
+            "audioMs": 2951,
+            "realTimeFactor": 0.01592680447305998,
+            "chunks": 141,
+            "chunkSamples": {
+                "min": 54,
+                "max": 512
+            },
+            "sampleRate": 24000,
+            "nativeFormat": "int16 24000 Hz 1 ch",
+            "peakDbfs": -3.134316155234141,
+            "rmsDbfs": -17.54250351946586,
+            "leadingSilenceMs": 45,
+            "text": "ja-short",
+            "attempt": 1,
+            "asr": {
+                "engine": "android.speech-recognizer/on-device",
+                "text": "こんにちは今日はいい天気ですね",
+                "cer": 0.0,
+                "elapsedMs": 941
+            }
+        },
+        {
+            "firstChunkMs": 170,
+            "totalMs": 534,
+            "audioMs": 11436,
+            "realTimeFactor": 0.04669464847848898,
+            "chunks": 544,
+            "chunkSamples": {
+                "min": 9,
+                "max": 512
+            },
+            "sampleRate": 24000,
+            "nativeFormat": "int16 24000 Hz 1 ch",
+            "peakDbfs": -2.55977837278736,
+            "rmsDbfs": -18.62432152916822,
+            "leadingSilenceMs": 20,
+            "text": "ja-long",
+            "attempt": 0
+        },
+        {
+            "firstChunkMs": 30,
+            "totalMs": 128,
+            "audioMs": 11436,
+            "realTimeFactor": 0.011192724728926198,
+            "chunks": 544,
+            "chunkSamples": {
+                "min": 9,
+                "max": 512
+            },
+            "sampleRate": 24000,
+            "nativeFormat": "int16 24000 Hz 1 ch",
+            "peakDbfs": -2.55977837278736,
+            "rmsDbfs": -18.62432152916822,
+            "leadingSilenceMs": 20,
+            "text": "ja-long",
+            "attempt": 1,
+            "asr": {
+                "engine": "android.speech-recognizer/on-device",
+                "text": "岐阜県の白川号は合唱作りの集落として知られています冬になると雪に覆われ夜にはライトアップが行われることもあります",
+                "cer": 0.05357142857142857,
+                "elapsedMs": 1932
+            }
+        },
+        {
+            "firstChunkMs": 580,
+            "totalMs": 679,
+            "audioMs": 2988,
+            "realTimeFactor": 0.22724230254350736,
+            "chunks": 142,
+            "chunkSamples": {
+                "min": 25,
+                "max": 512
+            },
+            "sampleRate": 24000,
+            "nativeFormat": "int16 24000 Hz 1 ch",
+            "peakDbfs": -2.7250646225516584,
+            "rmsDbfs": -19.507265877442464,
+            "leadingSilenceMs": 42,
+            "text": "en-short",
+            "attempt": 0
+        },
+        {
+            "firstChunkMs": 44,
+            "totalMs": 84,
+            "audioMs": 2988,
+            "realTimeFactor": 0.028112449799196786,
+            "chunks": 142,
+            "chunkSamples": {
+                "min": 25,
+                "max": 512
+            },
+            "sampleRate": 24000,
+            "nativeFormat": "int16 24000 Hz 1 ch",
+            "peakDbfs": -2.7250646225516584,
+            "rmsDbfs": -19.507265877442464,
+            "leadingSilenceMs": 42,
+            "text": "en-short",
+            "attempt": 1,
+            "asr": {
+                "engine": "android.speech-recognizer/on-device",
+                "text": "Hello the weather is nice today isn't it",
+                "cer": 0.0,
+                "elapsedMs": 798
+            }
+        }
+    ],
+    "jaPerVoice": [
+        {
+            "firstChunkMs": 47,
+            "totalMs": 92,
+            "audioMs": 2951,
+            "realTimeFactor": 0.031175872585564215,
+            "chunks": 141,
+            "chunkSamples": {
+                "min": 54,
+                "max": 512
+            },
+            "sampleRate": 24000,
+            "nativeFormat": "int16 24000 Hz 1 ch",
+            "peakDbfs": -3.134316155234141,
+            "rmsDbfs": -17.54250351946586,
+            "leadingSilenceMs": 45,
+            "voice": "ja-JP-language",
+            "quality": "high",
+            "asr": {
+                "engine": "android.speech-recognizer/on-device",
+                "text": "こんにちは今日はいい天気ですね",
+                "cer": 0.0,
+                "elapsedMs": 1084
+            }
+        },
+        {
+            "firstChunkMs": 1078,
+            "totalMs": 1205,
+            "audioMs": 2793,
+            "realTimeFactor": 0.4314357321876119,
+            "chunks": 140,
+            "chunkSamples": {
+                "min": 648,
+                "max": 960
+            },
+            "sampleRate": 48000,
+            "nativeFormat": "int16 48000 Hz 1 ch",
+            "peakDbfs": -3.7092509536182936,
+            "rmsDbfs": -17.740028435311586,
+            "leadingSilenceMs": 49,
+            "voice": "ja-jp-x-jab-network",
+            "quality": "high",
+            "asr": {
+                "engine": "android.speech-recognizer/on-device",
+                "text": "こんにちは今日はいい天気ですね",
+                "cer": 0.0,
+                "elapsedMs": 577
+            }
+        },
+        {
+            "firstChunkMs": 493,
+            "totalMs": 588,
+            "audioMs": 3033,
+            "realTimeFactor": 0.19386745796241345,
+            "chunks": 152,
+            "chunkSamples": {
+                "min": 648,
+                "max": 960
+            },
+            "sampleRate": 48000,
+            "nativeFormat": "int16 48000 Hz 1 ch",
+            "peakDbfs": -2.0530701248634897,
+            "rmsDbfs": -19.511714444553434,
+            "leadingSilenceMs": 52,
+            "voice": "ja-jp-x-htm-network",
+            "quality": "high",
+            "asr": {
+                "engine": "android.speech-recognizer/on-device",
+                "text": "こんにちは今日はいい天気ですね",
+                "cer": 0.0,
+                "elapsedMs": 575
+            }
+        },
+        {
+            "firstChunkMs": 285,
+            "totalMs": 378,
+            "audioMs": 2733,
+            "realTimeFactor": 0.13830954994511527,
+            "chunks": 137,
+            "chunkSamples": {
+                "min": 648,
+                "max": 960
+            },
+            "sampleRate": 48000,
+            "nativeFormat": "int16 48000 Hz 1 ch",
+            "peakDbfs": -0.9113807117236522,
+            "rmsDbfs": -17.127880800535173,
+            "leadingSilenceMs": 48,
+            "voice": "ja-jp-x-jad-network",
+            "quality": "high",
+            "asr": {
+                "engine": "android.speech-recognizer/on-device",
+                "text": "こんにちは今日はいい天気ですね",
+                "cer": 0.0,
+                "elapsedMs": 577
+            }
+        },
+        {
+            "firstChunkMs": 35,
+            "totalMs": 86,
+            "audioMs": 2951,
+            "realTimeFactor": 0.029142663503896982,
+            "chunks": 141,
+            "chunkSamples": {
+                "min": 54,
+                "max": 512
+            },
+            "sampleRate": 24000,
+            "nativeFormat": "int16 24000 Hz 1 ch",
+            "peakDbfs": -3.134316155234141,
+            "rmsDbfs": -17.54250351946586,
+            "leadingSilenceMs": 45,
+            "voice": "ja-jp-x-jab-local",
+            "quality": "high",
+            "asr": {
+                "engine": "android.speech-recognizer/on-device",
+                "text": "こんにちは今日はいい天気ですね",
+                "cer": 0.0,
+                "elapsedMs": 576
+            }
+        },
+        {
+            "firstChunkMs": 149,
+            "totalMs": 356,
+            "audioMs": 2932,
+            "realTimeFactor": 0.12141882673942701,
+            "chunks": 141,
+            "chunkSamples": {
+                "min": 77,
+                "max": 512
+            },
+            "sampleRate": 24000,
+            "nativeFormat": "int16 24000 Hz 1 ch",
+            "peakDbfs": -2.2885741150210457,
+            "rmsDbfs": -18.84794577410604,
+            "leadingSilenceMs": 42,
+            "voice": "ja-jp-x-jad-local",
+            "quality": "high",
+            "asr": {
+                "engine": "android.speech-recognizer/on-device",
+                "text": "こんにちは今日はいい天気ですね",
+                "cer": 0.0,
+                "elapsedMs": 525
+            }
+        },
+        {
+            "firstChunkMs": 138,
+            "totalMs": 292,
+            "audioMs": 2909,
+            "realTimeFactor": 0.10037813681677553,
+            "chunks": 139,
+            "chunkSamples": {
+                "min": 75,
+                "max": 512
+            },
+            "sampleRate": 24000,
+            "nativeFormat": "int16 24000 Hz 1 ch",
+            "peakDbfs": -1.352509259555203,
+            "rmsDbfs": -18.848448453017724,
+            "leadingSilenceMs": 48,
+            "voice": "ja-jp-x-jac-local",
+            "quality": "high",
+            "asr": {
+                "engine": "android.speech-recognizer/on-device",
+                "text": "こんにちは今日はいい天気ですね",
+                "cer": 0.0,
+                "elapsedMs": 509
+            }
+        },
+        {
+            "firstChunkMs": 304,
+            "totalMs": 429,
+            "audioMs": 2673,
+            "realTimeFactor": 0.16049382716049382,
+            "chunks": 134,
+            "chunkSamples": {
+                "min": 648,
+                "max": 960
+            },
+            "sampleRate": 48000,
+            "nativeFormat": "int16 48000 Hz 1 ch",
+            "peakDbfs": -1.5908378820121485,
+            "rmsDbfs": -17.79026744596004,
+            "leadingSilenceMs": 48,
+            "voice": "ja-jp-x-jac-network",
+            "quality": "high",
+            "asr": {
+                "engine": "android.speech-recognizer/on-device",
+                "text": "こんにちは今日はいい天気ですね",
+                "cer": 0.0,
+                "elapsedMs": 526
+            }
+        },
+        {
+            "firstChunkMs": 122,
+            "totalMs": 210,
+            "audioMs": 3170,
+            "realTimeFactor": 0.06624605678233439,
+            "chunks": 150,
+            "chunkSamples": {
+                "min": 112,
+                "max": 512
+            },
+            "sampleRate": 24000,
+            "nativeFormat": "int16 24000 Hz 1 ch",
+            "peakDbfs": -3.1762457517405034,
+            "rmsDbfs": -19.836085523544288,
+            "leadingSilenceMs": 48,
+            "voice": "ja-jp-x-htm-local",
+            "quality": "high",
+            "asr": {
+                "engine": "android.speech-recognizer/on-device",
+                "text": "こんにちは今日はいい天気ですね",
+                "cer": 0.0,
+                "elapsedMs": 399
+            }
+        }
+    ],
+    "cancel": {
+        "chunksAfterCancel": 12,
+        "nextRequest": {
+            "firstChunkMs": 91,
+            "totalMs": 150,
+            "audioMs": 2951,
+            "realTimeFactor": 0.05083022704168079,
+            "chunks": 141,
+            "chunkSamples": {
+                "min": 54,
+                "max": 512
+            },
+            "sampleRate": 24000,
+            "nativeFormat": "int16 24000 Hz 1 ch",
+            "peakDbfs": -3.134316155234141,
+            "rmsDbfs": -17.54250351946586,
+            "leadingSilenceMs": 45
+        }
+    },
+    "unknownVoice": "unknownVoice",
+    "isSupported": true,
+    "concurrent": [
+        {
+            "firstChunkMs": 63,
+            "totalMs": 85,
+            "audioMs": 2951,
+            "realTimeFactor": 0.02880379532361911,
+            "chunks": 141,
+            "chunkSamples": {
+                "min": 54,
+                "max": 512
+            },
+            "sampleRate": 24000,
+            "nativeFormat": "int16 24000 Hz 1 ch",
+            "peakDbfs": -3.134316155234141,
+            "rmsDbfs": -17.54250351946586,
+            "leadingSilenceMs": 45
+        },
+        {
+            "firstChunkMs": 549,
+            "totalMs": 563,
+            "audioMs": 2988,
+            "realTimeFactor": 0.1884203480589023,
+            "chunks": 142,
+            "chunkSamples": {
+                "min": 25,
+                "max": 512
+            },
+            "sampleRate": 24000,
+            "nativeFormat": "int16 24000 Hz 1 ch",
+            "peakDbfs": -2.7250646225516584,
+            "rmsDbfs": -19.507265877442464,
+            "leadingSilenceMs": 42
+        }
+    ]
+}
