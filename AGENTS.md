@@ -39,7 +39,8 @@ Spirits Garden の試作の写し（lab と同じコード）をもとに作り�
 
 ## 公開
 
+0.1.0 を 2026-10-20 に公開した（tag `v0.1.0`）。新しい版を出すときは CHANGELOG を書き、tag を `v<版>` で打つ。
+0.1.0 を 2026-10-20 に公開した（tag `v0.1.0`）。新しい版を出すときは CHANGELOG を書き、tag を `v<版>` で打つ。
 pub.dev への公開は取り消せない（discontinue しかできない）。公開の前に名前・version・公開内容・対応範囲をオーナーに示し、
-`flutter pub publish --dry-run` の結果を見せる。`publish_to: none` は公開の直前まで外さない。
-**`.pubignore` があると `.gitignore` は見られない。** build の生成物も `.pubignore` に書く（pcm_asr の 0.1.0 は `build/` が入った）。
+`flutter pub publish --dry-run` の結果を見せる。**`.pubignore` があると `.gitignore` は見られない。** build の生成物も `.pubignore` に書く（pcm_asr の 0.1.0 は `build/` が入った）。
 dry-run は commit 直前の作業ツリーで、`Total compressed archive size` を見る。publisher は `kiarina.dev`（pub.dev のサイトで付ける）。
