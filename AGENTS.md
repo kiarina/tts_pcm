@@ -41,7 +41,7 @@ Spirits Garden の試作の写し（lab と同じコード）をもとに作り�
 
 ## 公開
 
-0.1.0 を 2026-10-20 に公開した（tag `v0.1.0`）。新しい版を出すときは CHANGELOG を書き、公開した commit に `git tag -a v<版> -m "tts_pcm <版>"` を打って push する（手元の git は `tag.gpgsign` が有効で、`-m` の無い `git tag` は「no tag message?」で止まる）。
+0.1.0 を 2026-10-20、0.2.0（声の高さ）を 2026-10-22 に公開した（tag `v0.1.0`・`v0.2.0`）。新しい版を出すときは CHANGELOG を書き、公開した commit に `git tag -a v<版> -m "tts_pcm <版>"` を打って push する（手元の git は `tag.gpgsign` が有効で、`-m` の無い `git tag` は「no tag message?」で止まる）。
 pub.dev への公開は取り消せない（discontinue しかできない）。公開の前に名前・version・公開内容・対応範囲をオーナーに示し、
 `flutter pub publish --dry-run` の結果を見せる。**`.pubignore` があると `.gitignore` は見られない。** build の生成物も `.pubignore` に書く（pcm_asr の 0.1.0 は `build/` が入った）。
 dry-run は commit 直前の作業ツリーで、`Total compressed archive size` を見る。publisher は `kiarina.dev`（pub.dev のサイトで付ける）。

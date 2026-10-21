@@ -36,4 +36,4 @@ Spirits Garden の試作の `speak` が OS の声で話すとき、brain が声�
 - [x] example で声ごとの高さを測り、macOS・iOS（iPad Air 4）・Android（Pixel 6）・Windows（G-GEAR）の結果を `results/*-pitch.json` と README に（2026-10-22）
 - [x] 試作の `speak` に `pitch` を足す（Spirits Garden 側、約束の版 36。試作は git の commit で使う）
 - [ ] 選ばれる声の聞こえ方をオーナーが聞く（Apple は全部 `low` の段階なので、日本語の高い声が Kyoko でなく Flo（Eloquence）になる）。音を出すので MacBook Pro ではしない
-- [ ] CHANGELOG・dry-run をオーナーに見せて 0.2.0 を公開
+- [x] CHANGELOG・dry-run をオーナーに見せて 0.2.0 を公開（2026-10-22、オーナーの承認。tag `v0.2.0` は `35f5cf8`）
