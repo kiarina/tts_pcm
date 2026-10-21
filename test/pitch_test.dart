@@ -99,6 +99,31 @@ void main() {
       expect(pickVoice(v, p, TtsPitch.high)?.id, 'mid-high');
     });
 
+    test('splits at the widest gap, not at a fixed line', () {
+      // Google's Japanese voices on a Pixel 6.
+      final v = [
+        for (final id in ['jab', 'jac', 'jad', 'htm']) voice(id),
+      ];
+      final p = [
+        const TtsVoicePitch(voiceId: 'jab', hz: 287),
+        const TtsVoicePitch(voiceId: 'jac', hz: 160),
+        const TtsVoicePitch(voiceId: 'jad', hz: 173),
+        const TtsVoicePitch(voiceId: 'htm', hz: 301),
+      ];
+      expect(pickVoice(v, p, TtsPitch.low)?.id, 'jac');
+      expect(pickVoice(v, p, TtsPitch.high)?.id, 'jab');
+    });
+
+    test('voices all on one side leave the other empty', () {
+      final v = [voice('a'), voice('b')];
+      final p = [
+        const TtsVoicePitch(voiceId: 'a', hz: 230),
+        const TtsVoicePitch(voiceId: 'b', hz: 290),
+      ];
+      expect(pickVoice(v, p, TtsPitch.low), isNull);
+      expect(pickVoice(v, p, TtsPitch.high)?.id, 'a');
+    });
+
     test('null when no voice is on that side', () {
       expect(pickVoice([voices[3]], pitches, TtsPitch.low), isNull);
       expect(pickVoice(voices, const [], TtsPitch.high), isNull);

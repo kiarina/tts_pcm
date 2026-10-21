@@ -5,7 +5,12 @@ import 'dart:typed_data';
 /// little of it is voiced.
 ///
 /// YIN on 40 ms frames every 10 ms, after reducing to 8 kHz; frames quieter
-/// than -40 dBFS are skipped. Searches 50–500 Hz.
+/// than -40 dBFS are skipped. Searches 50–500 Hz. A frame is voiced when the
+/// deepest dip of the normalized difference is below 0.45, and takes the
+/// first dip within 0.05 of the deepest (the deepest alone is often twice
+/// the period). YIN's fixed threshold (0.1–0.15) drops the quieter, lower
+/// frames at the ends of phrases and read synthetic voices 5–20 % high
+/// against Praat; this stayed within 6 % on 24 Apple and Google voices.
 double? estimatePitch(Int16List samples, int sampleRate) =>
     _estimate(samples, sampleRate).$1;
 
@@ -16,7 +21,8 @@ double? estimatePitch(Int16List samples, int sampleRate) =>
 const _rate = 8000;
 const _minHz = 50.0;
 const _maxHz = 500.0;
-const _threshold = 0.15;
+const _threshold = 0.45;
+const _tolerance = 0.05;
 const _silence = 328; // -40 dBFS RMS
 
 (double?, double) _estimate(Int16List samples, int sampleRate) {
@@ -50,17 +56,19 @@ const _silence = 328; // -40 dBFS RMS
       sum += d[lag];
       d[lag] = sum == 0 ? 1 : d[lag] * lag / sum;
     }
-    int? best;
-    for (var lag = minLag; lag < maxLag; lag++) {
-      if (d[lag] < _threshold) {
-        while (lag + 1 < maxLag && d[lag + 1] < d[lag]) {
-          lag++;
-        }
-        best = lag;
-        break;
-      }
+    var deepest = d[minLag];
+    for (var lag = minLag + 1; lag < maxLag; lag++) {
+      if (d[lag] < deepest) deepest = d[lag];
     }
-    if (best == null) continue;
+    if (deepest >= _threshold) continue;
+    final limit = math.min(_threshold, deepest + _tolerance);
+    var best = minLag;
+    while (d[best] >= limit) {
+      best++;
+    }
+    while (best + 1 < maxLag && d[best + 1] < d[best]) {
+      best++;
+    }
     // Parabolic interpolation around the dip.
     final a = d[best - 1], b = d[best], c = d[best + 1];
     final den = a - 2 * b + c;

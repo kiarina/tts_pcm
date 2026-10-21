@@ -1,6 +1,6 @@
 {
     "platform": "ios",
-    "voicesMs": 129,
+    "voicesMs": 109,
     "voiceCount": 193,
     "jaVoices": [
         {
@@ -12,9 +12,9 @@
             "requiresNetwork": false,
             "native": {
                 "quality": "default",
+                "novelty": false,
                 "gender": "female",
-                "personal": false,
-                "novelty": false
+                "personal": false
             }
         },
         {
@@ -25,10 +25,10 @@
             "gender": null,
             "requiresNetwork": false,
             "native": {
-                "personal": false,
+                "quality": "default",
                 "novelty": false,
-                "gender": "unspecified",
-                "quality": "default"
+                "personal": false,
+                "gender": "unspecified"
             }
         },
         {
@@ -39,10 +39,10 @@
             "gender": null,
             "requiresNetwork": false,
             "native": {
-                "personal": false,
-                "quality": "default",
+                "novelty": false,
                 "gender": "unspecified",
-                "novelty": false
+                "quality": "default",
+                "personal": false
             }
         },
         {
@@ -53,10 +53,10 @@
             "gender": null,
             "requiresNetwork": false,
             "native": {
-                "personal": false,
                 "gender": "unspecified",
-                "novelty": false,
-                "quality": "default"
+                "quality": "default",
+                "personal": false,
+                "novelty": false
             }
         },
         {
@@ -67,10 +67,10 @@
             "gender": null,
             "requiresNetwork": false,
             "native": {
-                "gender": "unspecified",
                 "quality": "default",
-                "personal": false,
-                "novelty": false
+                "novelty": false,
+                "gender": "unspecified",
+                "personal": false
             }
         },
         {
@@ -82,9 +82,9 @@
             "requiresNetwork": false,
             "native": {
                 "personal": false,
-                "novelty": false,
+                "gender": "unspecified",
                 "quality": "default",
-                "gender": "unspecified"
+                "novelty": false
             }
         },
         {
@@ -95,9 +95,9 @@
             "gender": null,
             "requiresNetwork": false,
             "native": {
-                "gender": "unspecified",
-                "personal": false,
                 "novelty": false,
+                "personal": false,
+                "gender": "unspecified",
                 "quality": "default"
             }
         },
@@ -109,10 +109,10 @@
             "gender": null,
             "requiresNetwork": false,
             "native": {
-                "gender": "unspecified",
-                "quality": "default",
                 "novelty": false,
-                "personal": false
+                "quality": "default",
+                "personal": false,
+                "gender": "unspecified"
             }
         },
         {
@@ -123,10 +123,10 @@
             "gender": null,
             "requiresNetwork": false,
             "native": {
-                "quality": "default",
+                "novelty": false,
                 "gender": "unspecified",
-                "personal": false,
-                "novelty": false
+                "quality": "default",
+                "personal": false
             }
         },
         {
@@ -137,8 +137,8 @@
             "gender": "female",
             "requiresNetwork": false,
             "native": {
-                "quality": "default",
                 "personal": false,
+                "quality": "default",
                 "novelty": false,
                 "gender": "female"
             }
@@ -169,9 +169,9 @@
                 "quality": "low",
                 "gender": "female",
                 "novelty": false,
-                "hz": 264.466540532196,
-                "voicing": 0.8553054662379421,
-                "ms": 1925
+                "hz": 248.96299947531676,
+                "voicing": 0.9646302250803859,
+                "ms": 1993
             },
             {
                 "lang": "ja",
@@ -181,9 +181,9 @@
                 "quality": "low",
                 "gender": null,
                 "novelty": false,
-                "hz": 106.86350495327366,
-                "voicing": 0.43448275862068964,
-                "ms": 200
+                "hz": 102.67453321559823,
+                "voicing": 0.7482758620689656,
+                "ms": 188
             },
             {
                 "lang": "ja",
@@ -193,9 +193,9 @@
                 "quality": "low",
                 "gender": null,
                 "novelty": false,
-                "hz": 233.05428174464106,
-                "voicing": 0.7311827956989247,
-                "ms": 98
+                "hz": 230.9011693776916,
+                "voicing": 0.8351254480286738,
+                "ms": 99
             },
             {
                 "lang": "ja",
@@ -205,9 +205,9 @@
                 "quality": "low",
                 "gender": null,
                 "novelty": false,
-                "hz": 103.99577660185594,
-                "voicing": 0.5956678700361011,
-                "ms": 98
+                "hz": 100.28290554745371,
+                "voicing": 0.8158844765342961,
+                "ms": 97
             },
             {
                 "lang": "ja",
@@ -217,9 +217,9 @@
                 "quality": "low",
                 "gender": null,
                 "novelty": false,
-                "hz": 81.34631586411295,
-                "voicing": 0.2560553633217993,
-                "ms": 97
+                "hz": 73.39957568747694,
+                "voicing": 0.6608996539792388,
+                "ms": 96
             },
             {
                 "lang": "ja",
@@ -229,9 +229,9 @@
                 "quality": "low",
                 "gender": null,
                 "novelty": false,
-                "hz": 94.31478302685049,
-                "voicing": 0.4387755102040816,
-                "ms": 98
+                "hz": 91.24510603318326,
+                "voicing": 0.7142857142857143,
+                "ms": 97
             },
             {
                 "lang": "ja",
@@ -241,8 +241,8 @@
                 "quality": "low",
                 "gender": null,
                 "novelty": false,
-                "hz": 67.78283351356258,
-                "voicing": 0.30313588850174217,
+                "hz": 64.83857516953712,
+                "voicing": 0.5679442508710801,
                 "ms": 98
             },
             {
@@ -253,8 +253,8 @@
                 "quality": "low",
                 "gender": null,
                 "novelty": false,
-                "hz": 259.46431815151846,
-                "voicing": 0.6592592592592592,
+                "hz": 255.1118333264168,
+                "voicing": 0.8666666666666667,
                 "ms": 98
             },
             {
@@ -265,9 +265,9 @@
                 "quality": "low",
                 "gender": null,
                 "novelty": false,
-                "hz": 169.80744155757742,
-                "voicing": 0.697841726618705,
-                "ms": 97
+                "hz": 167.02780450012546,
+                "voicing": 0.841726618705036,
+                "ms": 98
             },
             {
                 "lang": "ja",
@@ -277,9 +277,45 @@
                 "quality": "low",
                 "gender": "female",
                 "novelty": false,
-                "hz": 265.87281219135303,
-                "voicing": 0.8576388888888888,
-                "ms": 809
+                "hz": 262.1076883124969,
+                "voicing": 0.9618055555555556,
+                "ms": 824
+            },
+            {
+                "lang": "en",
+                "name": "Daniel",
+                "id": "com.apple.voice.compact.en-GB.Daniel",
+                "language": "en-GB",
+                "quality": "low",
+                "gender": "male",
+                "novelty": false,
+                "hz": 112.36442716605538,
+                "voicing": 0.8282208588957055,
+                "ms": 332
+            },
+            {
+                "lang": "en",
+                "name": "Moira",
+                "id": "com.apple.voice.compact.en-IE.Moira",
+                "language": "en-IE",
+                "quality": "low",
+                "gender": "female",
+                "novelty": false,
+                "hz": 189.45847146970337,
+                "voicing": 0.910958904109589,
+                "ms": 371
+            },
+            {
+                "lang": "en",
+                "name": "Rishi",
+                "id": "com.apple.voice.compact.en-IN.Rishi",
+                "language": "en-IN",
+                "quality": "low",
+                "gender": "male",
+                "novelty": false,
+                "hz": 115.93203573132843,
+                "voicing": 0.9266666666666666,
+                "ms": 220
             },
             {
                 "lang": "en",
@@ -289,21 +325,21 @@
                 "quality": "low",
                 "gender": "female",
                 "novelty": false,
-                "hz": 181.42577662702305,
-                "voicing": 0.7831715210355987,
-                "ms": 546
+                "hz": 181.0148154524012,
+                "voicing": 0.912621359223301,
+                "ms": 544
             },
             {
                 "lang": "en",
-                "name": "Daniel",
-                "id": "com.apple.voice.super-compact.en-GB.Daniel",
-                "language": "en-GB",
+                "name": "Tessa",
+                "id": "com.apple.voice.compact.en-ZA.Tessa",
+                "language": "en-ZA",
                 "quality": "low",
-                "gender": "male",
+                "gender": "female",
                 "novelty": false,
-                "hz": 115.51220456193853,
-                "voicing": 0.42024539877300615,
-                "ms": 356
+                "hz": 179.34543264946188,
+                "voicing": 0.9127725856697819,
+                "ms": 243
             },
             {
                 "lang": "en",
@@ -314,44 +350,8 @@
                 "gender": "female",
                 "novelty": false,
                 "hz": 182.42649119949837,
-                "voicing": 0.8651315789473685,
-                "ms": 290
-            },
-            {
-                "lang": "en",
-                "name": "Moira",
-                "id": "com.apple.voice.super-compact.en-IE.Moira",
-                "language": "en-IE",
-                "quality": "low",
-                "gender": "female",
-                "novelty": false,
-                "hz": 189.07768164677236,
-                "voicing": 0.8561643835616438,
-                "ms": 382
-            },
-            {
-                "lang": "en",
-                "name": "Rishi",
-                "id": "com.apple.voice.super-compact.en-IN.Rishi",
-                "language": "en-IN",
-                "quality": "low",
-                "gender": "male",
-                "novelty": false,
-                "hz": 117.05509502429625,
-                "voicing": 0.7191780821917808,
-                "ms": 264
-            },
-            {
-                "lang": "en",
-                "name": "Tessa",
-                "id": "com.apple.voice.super-compact.en-ZA.Tessa",
-                "language": "en-ZA",
-                "quality": "low",
-                "gender": "female",
-                "novelty": false,
-                "hz": 179.59789088820443,
-                "voicing": 0.8598130841121495,
-                "ms": 249
+                "voicing": 0.9046052631578947,
+                "ms": 301
             },
             {
                 "lang": "en",
@@ -361,9 +361,9 @@
                 "quality": "low",
                 "gender": null,
                 "novelty": false,
-                "hz": 120.6809041514887,
-                "voicing": 0.5944055944055944,
-                "ms": 104
+                "hz": 121.14081540431282,
+                "voicing": 0.8566433566433567,
+                "ms": 99
             },
             {
                 "lang": "en",
@@ -373,9 +373,9 @@
                 "quality": "low",
                 "gender": null,
                 "novelty": false,
-                "hz": 120.14934853865115,
-                "voicing": 0.5179856115107914,
-                "ms": 100
+                "hz": 121.22687885897393,
+                "voicing": 0.841726618705036,
+                "ms": 95
             },
             {
                 "lang": "en",
@@ -385,9 +385,9 @@
                 "quality": "low",
                 "gender": null,
                 "novelty": false,
-                "hz": 246.9411945548743,
-                "voicing": 0.8523985239852399,
-                "ms": 286
+                "hz": 246.2205773426916,
+                "voicing": 0.948339483394834,
+                "ms": 91
             },
             {
                 "lang": "en",
@@ -397,9 +397,9 @@
                 "quality": "low",
                 "gender": null,
                 "novelty": false,
-                "hz": 247.52204053922975,
-                "voicing": 0.842911877394636,
-                "ms": 88
+                "hz": 246.48086579688106,
+                "voicing": 0.9578544061302682,
+                "ms": 89
             },
             {
                 "lang": "en",
@@ -409,9 +409,9 @@
                 "quality": "low",
                 "gender": null,
                 "novelty": false,
-                "hz": 118.96094546906862,
-                "voicing": 0.7689393939393939,
-                "ms": 90
+                "hz": 118.90612669968311,
+                "voicing": 0.9507575757575758,
+                "ms": 89
             },
             {
                 "lang": "en",
@@ -421,8 +421,8 @@
                 "quality": "low",
                 "gender": null,
                 "novelty": false,
-                "hz": 118.75952289316908,
-                "voicing": 0.7137404580152672,
+                "hz": 118.31224195241576,
+                "voicing": 0.950381679389313,
                 "ms": 90
             },
             {
@@ -433,9 +433,9 @@
                 "quality": "low",
                 "gender": null,
                 "novelty": false,
-                "hz": 89.96717268092077,
-                "voicing": 0.1625441696113074,
-                "ms": 260
+                "hz": 92.31492560756378,
+                "voicing": 0.8127208480565371,
+                "ms": 93
             },
             {
                 "lang": "en",
@@ -445,9 +445,9 @@
                 "quality": "low",
                 "gender": null,
                 "novelty": false,
-                "hz": 91.74637746078943,
-                "voicing": 0.1678832116788321,
-                "ms": 90
+                "hz": 91.94638289634712,
+                "voicing": 0.7554744525547445,
+                "ms": 91
             },
             {
                 "lang": "en",
@@ -457,9 +457,9 @@
                 "quality": "low",
                 "gender": null,
                 "novelty": false,
-                "hz": 107.72039132871839,
-                "voicing": 0.5719298245614035,
-                "ms": 89
+                "hz": 107.98975545376001,
+                "voicing": 0.8596491228070176,
+                "ms": 92
             },
             {
                 "lang": "en",
@@ -469,9 +469,9 @@
                 "quality": "low",
                 "gender": null,
                 "novelty": false,
-                "hz": 107.10537330800345,
-                "voicing": 0.5304659498207885,
-                "ms": 90
+                "hz": 108.1224135056557,
+                "voicing": 0.8351254480286738,
+                "ms": 92
             },
             {
                 "lang": "en",
@@ -481,9 +481,9 @@
                 "quality": "low",
                 "gender": null,
                 "novelty": false,
-                "hz": 78.81443879262413,
-                "voicing": 0.38267148014440433,
-                "ms": 91
+                "hz": 80.32791214867038,
+                "voicing": 0.7545126353790613,
+                "ms": 92
             },
             {
                 "lang": "en",
@@ -493,9 +493,9 @@
                 "quality": "low",
                 "gender": null,
                 "novelty": false,
-                "hz": 78.72056495655616,
-                "voicing": 0.3763837638376384,
-                "ms": 92
+                "hz": 80.51697689516875,
+                "voicing": 0.7011070110701108,
+                "ms": 91
             },
             {
                 "lang": "en",
@@ -505,9 +505,9 @@
                 "quality": "low",
                 "gender": null,
                 "novelty": false,
-                "hz": 289.5542166320984,
-                "voicing": 0.8533834586466166,
-                "ms": 91
+                "hz": 284.36380966914584,
+                "voicing": 0.981203007518797,
+                "ms": 90
             },
             {
                 "lang": "en",
@@ -517,9 +517,9 @@
                 "quality": "low",
                 "gender": null,
                 "novelty": false,
-                "hz": 289.33716123639266,
-                "voicing": 0.8515625,
-                "ms": 90
+                "hz": 286.20891137593475,
+                "voicing": 0.98046875,
+                "ms": 91
             },
             {
                 "lang": "en",
@@ -529,8 +529,8 @@
                 "quality": "low",
                 "gender": null,
                 "novelty": false,
-                "hz": 186.45813914464733,
-                "voicing": 0.8118081180811808,
+                "hz": 185.84279947314246,
+                "voicing": 0.9520295202952029,
                 "ms": 91
             },
             {
@@ -541,9 +541,9 @@
                 "quality": "low",
                 "gender": null,
                 "novelty": false,
-                "hz": 185.8551406514669,
-                "voicing": 0.7992424242424242,
-                "ms": 91
+                "hz": 185.30223836314244,
+                "voicing": 0.946969696969697,
+                "ms": 90
             },
             {
                 "lang": "en",
@@ -554,8 +554,8 @@
                 "gender": "male",
                 "novelty": false,
                 "hz": 132.71928654392744,
-                "voicing": 0.5671641791044776,
-                "ms": 693
+                "voicing": 0.8992537313432836,
+                "ms": 715
             },
             {
                 "lang": "en",
@@ -565,9 +565,9 @@
                 "quality": "low",
                 "gender": null,
                 "novelty": true,
-                "hz": 450.1105997686961,
-                "voicing": 0.2823834196891192,
-                "ms": 220
+                "hz": 447.502451328223,
+                "voicing": 0.7072538860103627,
+                "ms": 212
             },
             {
                 "lang": "en",
@@ -577,9 +577,9 @@
                 "quality": "low",
                 "gender": "male",
                 "novelty": false,
-                "hz": 137.5838130725345,
-                "voicing": 0.6470588235294118,
-                "ms": 268
+                "hz": 134.84991806008276,
+                "voicing": 0.9033613445378151,
+                "ms": 276
             },
             {
                 "lang": "en",
@@ -589,9 +589,9 @@
                 "quality": "low",
                 "gender": null,
                 "novelty": true,
-                "hz": 64.5309506640888,
-                "voicing": 0.9019607843137255,
-                "ms": 239
+                "hz": 64.5395319528163,
+                "voicing": 0.9550173010380623,
+                "ms": 234
             },
             {
                 "lang": "en",
@@ -601,9 +601,9 @@
                 "quality": "low",
                 "gender": null,
                 "novelty": true,
-                "hz": null,
-                "voicing": 0.0,
-                "ms": 156
+                "hz": 325.2911198962182,
+                "voicing": 0.4051948051948052,
+                "ms": 152
             },
             {
                 "lang": "en",
@@ -613,9 +613,9 @@
                 "quality": "low",
                 "gender": null,
                 "novelty": true,
-                "hz": 96.63279023778502,
-                "voicing": 0.2649325626204239,
-                "ms": 297
+                "hz": 113.92547281840487,
+                "voicing": 0.8747591522157996,
+                "ms": 286
             },
             {
                 "lang": "en",
@@ -625,9 +625,9 @@
                 "quality": "low",
                 "gender": null,
                 "novelty": true,
-                "hz": 79.76343265602712,
-                "voicing": 0.12827225130890052,
-                "ms": 139
+                "hz": 80.34916507454093,
+                "voicing": 0.5680628272251309,
+                "ms": 142
             },
             {
                 "lang": "en",
@@ -637,9 +637,9 @@
                 "quality": "low",
                 "gender": null,
                 "novelty": true,
-                "hz": 506.76429159925743,
-                "voicing": 0.035256410256410256,
-                "ms": 114
+                "hz": 430.81015884468303,
+                "voicing": 0.4230769230769231,
+                "ms": 120
             },
             {
                 "lang": "en",
@@ -649,9 +649,9 @@
                 "quality": "low",
                 "gender": "female",
                 "novelty": false,
-                "hz": 200.28321563302504,
-                "voicing": 0.8746081504702194,
-                "ms": 284
+                "hz": 200.03282589108298,
+                "voicing": 0.9278996865203761,
+                "ms": 331
             },
             {
                 "lang": "en",
@@ -661,9 +661,9 @@
                 "quality": "low",
                 "gender": null,
                 "novelty": true,
-                "hz": 91.61596546368582,
-                "voicing": 0.7681818181818182,
-                "ms": 197
+                "hz": 91.58491921457633,
+                "voicing": 0.9484848484848485,
+                "ms": 195
             },
             {
                 "lang": "en",
@@ -673,9 +673,9 @@
                 "quality": "low",
                 "gender": null,
                 "novelty": true,
-                "hz": 270.0944502132304,
-                "voicing": 0.19117647058823528,
-                "ms": 127
+                "hz": 264.7175108861553,
+                "voicing": 0.7441176470588236,
+                "ms": 131
             },
             {
                 "lang": "en",
@@ -685,9 +685,9 @@
                 "quality": "low",
                 "gender": "male",
                 "novelty": false,
-                "hz": 100.51198742667806,
-                "voicing": 0.676923076923077,
-                "ms": 119
+                "hz": 102.70750204099525,
+                "voicing": 0.9107692307692308,
+                "ms": 121
             },
             {
                 "lang": "en",
@@ -697,9 +697,9 @@
                 "quality": "low",
                 "gender": null,
                 "novelty": true,
-                "hz": 232.07708607525376,
-                "voicing": 0.9503105590062112,
-                "ms": 339
+                "hz": 208.75432174409661,
+                "voicing": 0.9751552795031055,
+                "ms": 337
             },
             {
                 "lang": "en",
@@ -709,9 +709,9 @@
                 "quality": "low",
                 "gender": "male",
                 "novelty": false,
-                "hz": 129.87994565282605,
-                "voicing": 0.6134453781512605,
-                "ms": 270
+                "hz": 127.76893389825085,
+                "voicing": 0.9537815126050421,
+                "ms": 274
             },
             {
                 "lang": "en",
@@ -721,8 +721,8 @@
                 "quality": "low",
                 "gender": null,
                 "novelty": true,
-                "hz": 344.5764249082283,
-                "voicing": 0.09080459770114943,
+                "hz": 355.37194465708427,
+                "voicing": 0.6494252873563219,
                 "ms": 265
             },
             {
@@ -733,9 +733,9 @@
                 "quality": "low",
                 "gender": null,
                 "novelty": false,
-                "hz": 208.13889780495182,
-                "voicing": 0.8731563421828908,
-                "ms": 125
+                "hz": 209.19918052641776,
+                "voicing": 0.9144542772861357,
+                "ms": 127
             },
             {
                 "lang": "en",
@@ -745,8 +745,8 @@
                 "quality": "low",
                 "gender": null,
                 "novelty": false,
-                "hz": 208.44096336809486,
-                "voicing": 0.8621700879765396,
+                "hz": 209.16981807762764,
+                "voicing": 0.9090909090909091,
                 "ms": 124
             },
             {
@@ -757,9 +757,9 @@
                 "quality": "low",
                 "gender": "female",
                 "novelty": false,
-                "hz": 208.41150426966897,
-                "voicing": 0.8881578947368421,
-                "ms": 281
+                "hz": 208.18071173960553,
+                "voicing": 0.9539473684210527,
+                "ms": 285
             },
             {
                 "lang": "en",
@@ -769,9 +769,9 @@
                 "quality": "low",
                 "gender": "female",
                 "novelty": false,
-                "hz": 174.7073185137883,
-                "voicing": 0.7640449438202247,
-                "ms": 489
+                "hz": 173.7171348281779,
+                "voicing": 0.9063670411985019,
+                "ms": 502
             },
             {
                 "lang": "en",
@@ -781,9 +781,9 @@
                 "quality": "low",
                 "gender": null,
                 "novelty": true,
-                "hz": 90.77374967791373,
-                "voicing": 0.2520891364902507,
-                "ms": 209
+                "hz": 90.57502033250543,
+                "voicing": 0.8997214484679665,
+                "ms": 212
             },
             {
                 "lang": "en",
@@ -793,9 +793,9 @@
                 "quality": "low",
                 "gender": null,
                 "novelty": true,
-                "hz": 239.63603076634064,
-                "voicing": 0.8869047619047619,
-                "ms": 124
+                "hz": 240.53552884209364,
+                "voicing": 0.9255952380952381,
+                "ms": 126
             },
             {
                 "lang": "en",
@@ -805,9 +805,9 @@
                 "quality": "low",
                 "gender": null,
                 "novelty": false,
-                "hz": 66.58397442479372,
-                "voicing": 0.37575757575757573,
-                "ms": 122
+                "hz": 67.63265539110002,
+                "voicing": 0.7696969696969697,
+                "ms": 123
             },
             {
                 "lang": "en",
@@ -817,8 +817,8 @@
                 "quality": "low",
                 "gender": null,
                 "novelty": true,
-                "hz": 212.5943675307792,
-                "voicing": 0.19631901840490798,
+                "hz": 211.89070724459643,
+                "voicing": 0.8650306748466258,
                 "ms": 120
             },
             {
@@ -829,8 +829,8 @@
                 "quality": "low",
                 "gender": null,
                 "novelty": true,
-                "hz": null,
-                "voicing": 0.0,
+                "hz": 450.15592001804447,
+                "voicing": 0.07228915662650602,
                 "ms": 127
             },
             {
@@ -841,20 +841,20 @@
                 "quality": "low",
                 "gender": null,
                 "novelty": true,
-                "hz": 89.54854767439421,
-                "voicing": 0.564179104477612,
-                "ms": 123
+                "hz": 89.59301372243652,
+                "voicing": 0.8955223880597015,
+                "ms": 122
             }
         ],
-        "jaMs": 3622,
+        "jaMs": 3694,
         "jaPicked": {
             "low": "Eddy",
             "high": "Flo"
         },
-        "enMs": 9516,
+        "enMs": 9161,
         "enPicked": {
-            "low": "Eddy",
-            "high": "Kathy"
+            "low": "Grandma",
+            "high": "Junior"
         }
     }
 }

@@ -192,7 +192,8 @@ class _ProbePageState extends State<ProbePage> {
   /// that need the network or are not installed), and the voices picked.
   ///
   /// With `pitchWavDir` in the configuration, each sample is also written
-  /// there as a WAV (to check the estimate with another tool).
+  /// as a WAV there (true: the temp dir's `tts_wavs`), to check the estimate
+  /// with another tool.
   Future<void> _pitch(
     Map<String, Object?> report,
     Map<String, Object?> config,
@@ -211,7 +212,7 @@ class _ProbePageState extends State<ProbePage> {
         final one = Stopwatch()..start();
         final p = await _tts.measurePitch(v);
         pitches.add(p);
-        if (config['pitchWavDir'] case final String dir) {
+        if (config['pitchWavDir'] case final Object wavs) {
           final (_, pcm, rate) = await _synth(
             sampleSentences[lang]!,
             voice: v.id,
@@ -221,7 +222,7 @@ class _ProbePageState extends State<ProbePage> {
               '$lang-${v.name.replaceAll(RegExp(r'[^A-Za-z0-9-]'), '_')}.wav',
               pcm,
               rate,
-              dir: dir,
+              dir: wavs is String ? wavs : null,
             );
           }
         }

@@ -18,6 +18,10 @@ await for (final chunk in tts.synthesize(
   chunk.sampleRate;  // the engine's own rate (16000, 22050, 24000, 48000, ...): resample yourself
 }
 // To stop, cancel the subscription (listen(...).cancel()).
+
+// A lower or a higher voice: measure the voices once (keep the result), then pick.
+final pitches = await tts.measurePitches(voices);       // a few seconds; nothing is played
+final low = pickVoice(voices, pitches, TtsPitch.low);   // null: use the default voice
 ```
 
 Why not [flutter_tts](https://pub.dev/packages/flutter_tts): it plays the voice itself on Windows
@@ -47,6 +51,20 @@ No setup is needed on any platform. The Android manifest of the plugin declares 
   - `requiresNetwork`: true only for Android voices synthesized on a server.
   - `native`: the OS's own values (Apple `quality`, `gender`, `novelty`, `personal`; Android
     `quality`, `latency`, `features`, `notInstalled`; Windows `description`). Not a stable API.
+- `TtsPcm.instance.measurePitch(voice, {text})` → `TtsVoicePitch`: speaks a sample sentence with the
+  voice (nothing is played) and measures how high it sounds: `hz` (median F0; null when too little is
+  voiced or the synthesis failed, with `error`) and `voicing` (share of voiced frames). Plain data
+  (`toJson` / `fromJson`): keep it, and measure again only voices you have not seen
+  (`measurePitches(voices, known: kept)`). The sample is `sampleSentences` for the voice's language
+  (Japanese, else English).
+- `pickVoice(voices, pitches, TtsPitch.low | TtsPitch.high, {targetHz})` → `TtsVoice?`: a lower or a
+  higher voice. The voices are split at the widest gap between two voices next to each other in
+  pitch, the lower under 200 Hz and the upper over 140 Hz (165 Hz when there is none); on the asked
+  side it takes the highest quality there, closest to 120 Hz (low) or 220 Hz (high), or to
+  `targetHz`. Apple's novelty voices and Android voices that need the network or are not installed
+  are left out. Null when no voice is on that side. It picks by pitch, not by gender (`gender` is
+  null for most voices).
+- `estimatePitch(samples, sampleRate)`: the estimator alone (YIN on 8 kHz, pure Dart).
 - `TtsPcm.isSupported`: macOS, iOS, Android, Windows. The Web has no way to hand out the audio
   of `speechSynthesis`.
 - Errors end the stream with `TtsPcmException(code, message)`: `unknownVoice` for an id the
@@ -81,6 +99,23 @@ Not covered: Apple's enhanced and premium voices (not installed on the test devi
 "natural" Narrator voices (not listed by `Windows.Media.SpeechSynthesis`), other Android engines
 than Google's, SSML, and texts of hundreds of characters.
 
+## Voice pitch
+
+Measured with the example (`{"pitchOnly":true}`), Japanese voices and the voices picked for Japanese
+and American English:
+
+| | Japanese voices (median F0, Hz) | Picked, Japanese (low / high) | Picked, en-US | Measuring all Japanese voices |
+| --- | --- | --- | --- | --- |
+| macOS 27 | Kyoko 249, Eddy 103, Flo 231, Grandma 100, Grandpa 73, Reed 91, Rocko 65, Sandy 255, Shelley 167 | Eddy / Flo | Eddy / Junior | 2.6 s |
+| iPadOS 27 | the same, and O-ren 262 | Eddy / Flo | Eddy / Junior | 3.7 s |
+| Android 17 (Google) | jab 287, jac 160, jad 173, htm 301 (local) | jac / jab | iom / tpf | 2.2 s |
+| Windows 11 | Ayumi 249, Haruka 230, Ichiro 123 | Ichiro / Haruka | (no English voice installed) | 0.2 s |
+
+The estimates were checked against Praat on the macOS and Android samples: within 6 % for every
+voice, 1.2 % on average. Apple's first request with Kyoko takes about 2 s; the others 0.1–0.8 s each.
+How good the picked voices sound was not judged: Apple rates all of these `low`, so the picks on Apple
+are among its Eloquence voices (Eddy, Flo, ...) as much as Kyoko.
+
 ## Example
 
 `example/` runs the whole check once and writes a JSON report: the voices, each sentence twice
@@ -91,6 +126,9 @@ requests at once. Pass `{"exit":true}` as its configuration:
 - Android: `tool/android.sh` (the `config` intent extra).
 - iOS: `tmp/tts_config.json` in the app container (`xcrun devicectl device copy to`); the report is
   `tmp/tts_result.json`.
+
+`{"exit":true,"pitchOnly":true}` measures only the pitch of every Japanese and English voice
+(`results/<os>-pitch.json`); `"pitchWavDir": true` (or a folder) also writes each sample as a WAV.
 
 `results/` holds the reports behind the tables above; `python3 tool/summary.py` prints them.
 

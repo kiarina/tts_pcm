@@ -1,6 +1,6 @@
 {
     "platform": "windows",
-    "voicesMs": 14,
+    "voicesMs": 10,
     "voiceCount": 3,
     "jaVoices": [
         {
@@ -61,9 +61,9 @@
                 "quality": null,
                 "gender": "female",
                 "novelty": null,
-                "hz": 249.62974087796024,
-                "voicing": 0.8146964856230032,
-                "ms": 145
+                "hz": 249.02898644995716,
+                "voicing": 0.9297124600638977,
+                "ms": 64
             },
             {
                 "lang": "ja",
@@ -73,9 +73,9 @@
                 "quality": null,
                 "gender": "female",
                 "novelty": null,
-                "hz": 230.47057946574225,
-                "voicing": 0.8910505836575876,
-                "ms": 92
+                "hz": 229.92937453002645,
+                "voicing": 0.953307392996109,
+                "ms": 50
             },
             {
                 "lang": "ja",
@@ -85,12 +85,12 @@
                 "quality": null,
                 "gender": "male",
                 "novelty": null,
-                "hz": 126.58404492918949,
-                "voicing": 0.5559006211180124,
-                "ms": 118
+                "hz": 123.4891988689034,
+                "voicing": 0.7919254658385093,
+                "ms": 59
             }
         ],
-        "jaMs": 356,
+        "jaMs": 173,
         "jaPicked": {
             "low": "Microsoft Ichiro",
             "high": "Microsoft Haruka"

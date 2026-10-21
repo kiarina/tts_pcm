@@ -5,10 +5,11 @@
   data with `toJson` / `fromJson`, for the caller to keep. `measurePitches(voices, known:)` measures
   only voices not measured yet.
 - `pickVoice(voices, pitches, TtsPitch.low | TtsPitch.high, {targetHz})` picks a lower or a higher
-  voice: on its side of 165 Hz, of the highest quality there, the closest to 120 / 220 Hz (or
-  `targetHz`). Skips Apple's novelty voices and Android voices that need the network or are not
+  voice: the voices are split at their widest gap in pitch around 140–200 Hz (else at 165 Hz); on the
+  asked side, of the highest quality there, the closest to 120 / 220 Hz (or `targetHz`). Skips Apple's novelty voices and Android voices that need the network or are not
   installed; null when none is left.
-- `estimatePitch(samples, sampleRate)`: the estimator itself (YIN on 8 kHz, pure Dart).
+- `estimatePitch(samples, sampleRate)`: the estimator itself (YIN on 8 kHz, pure Dart; within 6 % of
+  Praat on the Apple and Google voices measured).
 
 ## 0.1.0
 

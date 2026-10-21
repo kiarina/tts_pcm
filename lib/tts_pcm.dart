@@ -96,7 +96,8 @@ T? _byName<T extends Enum>(List<T> values, Object? name) {
 
 /// Which side of a device's voices to pick by pitch, with the F0 it aims at.
 ///
-/// [low] takes voices under [TtsPitch.boundaryHz], [high] those at or above.
+/// The sides are split where the voices of the language leave their widest
+/// gap around [TtsPitch.boundaryHz] (see [pickVoice]).
 enum TtsPitch {
   low(120),
   high(220);
@@ -106,8 +107,14 @@ enum TtsPitch {
   /// The median F0 a voice of this side is chosen closest to.
   final double targetHz;
 
-  /// Where low ends and high begins.
+  /// Where low ends and high begins when the voices leave no gap to split
+  /// at (all of them low, or all high).
   static const boundaryHz = 165.0;
+
+  /// Where a split may fall: a gap whose lower voice is under [gapMaxHz]
+  /// and whose upper voice is over [gapMinHz].
+  static const gapMinHz = 140.0;
+  static const gapMaxHz = 200.0;
 }
 
 /// How high a voice sounds on this device: the median F0 of a sample
@@ -160,8 +167,15 @@ const sampleSentences = {
 };
 
 /// Picks the voice for [pitch] from [voices] by their measured [pitches]:
-/// those on its side of [TtsPitch.boundaryHz], of the highest quality among
-/// them, the one closest to [targetHz] (default [TtsPitch.targetHz]).
+/// those on its side, of the highest quality among them, the one closest to
+/// [targetHz] (default [TtsPitch.targetHz]).
+///
+/// The sides are split at the widest gap (by ratio) between two voices next
+/// to each other in pitch, the lower under [TtsPitch.gapMaxHz] and the upper
+/// over [TtsPitch.gapMinHz]; with no such gap, at [TtsPitch.boundaryHz].
+/// Lower voices of one OS can sit near any fixed line (Google's Japanese
+/// ones at 156 and 164 Hz, its higher ones at 285 and 301), and a fixed line
+/// would split them apart.
 ///
 /// Skips voices that are not measured, Apple's novelty voices, and Android
 /// voices that need the network or are not installed. Returns null when none
@@ -177,14 +191,23 @@ TtsVoice? pickVoice(
       if (p.hz != null) p.voiceId: p.hz!,
   };
   final target = targetHz ?? pitch.targetHz;
-  final candidates = [
+  final measured = [
     for (final v in voices)
-      if (hz[v.id] case final f?)
-        if (_selectable(v) &&
-            (pitch == TtsPitch.low
-                ? f < TtsPitch.boundaryHz
-                : f >= TtsPitch.boundaryHz))
-          v,
+      if (hz.containsKey(v.id) && _selectable(v)) v,
+  ];
+  final sorted = [for (final v in measured) hz[v.id]!]..sort();
+  var split = TtsPitch.boundaryHz;
+  var widest = 1.0;
+  for (var i = 0; i + 1 < sorted.length; i++) {
+    final (a, b) = (sorted[i], sorted[i + 1]);
+    if (a < TtsPitch.gapMaxHz && b > TtsPitch.gapMinHz && b / a > widest) {
+      widest = b / a;
+      split = math.sqrt(a * b);
+    }
+  }
+  final candidates = [
+    for (final v in measured)
+      if (pitch == TtsPitch.low ? hz[v.id]! < split : hz[v.id]! >= split) v,
   ];
   if (candidates.isEmpty) return null;
   int rank(TtsVoice v) => v.quality?.index ?? -1;

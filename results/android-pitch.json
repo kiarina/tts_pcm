@@ -1,6 +1,6 @@
 {
     "platform": "android",
-    "voicesMs": 986,
+    "voicesMs": 679,
     "voiceCount": 474,
     "jaVoices": [
         {
@@ -183,9 +183,9 @@
                 "quality": "high",
                 "gender": null,
                 "novelty": null,
-                "hz": 297.66292729433945,
-                "voicing": 0.7476923076923077,
-                "ms": 742
+                "hz": 287.04867373761687,
+                "voicing": 0.9015384615384615,
+                "ms": 713
             },
             {
                 "lang": "ja",
@@ -195,9 +195,9 @@
                 "quality": "high",
                 "gender": null,
                 "novelty": null,
-                "hz": 297.66292729433945,
-                "voicing": 0.7476923076923077,
-                "ms": 113
+                "hz": 287.04867373761687,
+                "voicing": 0.9015384615384615,
+                "ms": 119
             },
             {
                 "lang": "ja",
@@ -207,9 +207,9 @@
                 "quality": "high",
                 "gender": null,
                 "novelty": null,
-                "hz": 189.59324799889004,
-                "voicing": 0.5189873417721519,
-                "ms": 411
+                "hz": 173.1595092435458,
+                "voicing": 0.8006329113924051,
+                "ms": 499
             },
             {
                 "lang": "ja",
@@ -219,9 +219,9 @@
                 "quality": "high",
                 "gender": null,
                 "novelty": null,
-                "hz": 176.59995966542806,
-                "voicing": 0.4721311475409836,
-                "ms": 459
+                "hz": 159.7511780346573,
+                "voicing": 0.7737704918032787,
+                "ms": 531
             },
             {
                 "lang": "ja",
@@ -231,9 +231,9 @@
                 "quality": "high",
                 "gender": null,
                 "novelty": null,
-                "hz": 311.5470116060911,
-                "voicing": 0.6762177650429799,
-                "ms": 300
+                "hz": 300.61613151193893,
+                "voicing": 0.8825214899713467,
+                "ms": 317
             },
             {
                 "lang": "en",
@@ -243,9 +243,9 @@
                 "quality": "high",
                 "gender": null,
                 "novelty": null,
-                "hz": 217.38497920501084,
-                "voicing": 0.7773851590106007,
-                "ms": 957
+                "hz": 214.15045045863423,
+                "voicing": 0.9257950530035336,
+                "ms": 931
             },
             {
                 "lang": "en",
@@ -255,9 +255,9 @@
                 "quality": "high",
                 "gender": null,
                 "novelty": null,
-                "hz": 227.92856130324517,
-                "voicing": 0.7023809523809523,
-                "ms": 1171
+                "hz": 228.9348444445029,
+                "voicing": 0.9285714285714286,
+                "ms": 1083
             },
             {
                 "lang": "en",
@@ -267,9 +267,9 @@
                 "quality": "high",
                 "gender": null,
                 "novelty": null,
-                "hz": 203.19812552976194,
-                "voicing": 0.6877192982456141,
-                "ms": 909
+                "hz": 197.80172255066586,
+                "voicing": 0.8736842105263158,
+                "ms": 915
             },
             {
                 "lang": "en",
@@ -279,9 +279,9 @@
                 "quality": "high",
                 "gender": null,
                 "novelty": null,
-                "hz": 138.83332452490836,
-                "voicing": 0.4479166666666667,
-                "ms": 490
+                "hz": 134.53455507247148,
+                "voicing": 0.8125,
+                "ms": 440
             },
             {
                 "lang": "en",
@@ -291,9 +291,9 @@
                 "quality": "high",
                 "gender": null,
                 "novelty": null,
-                "hz": 241.58223259887166,
-                "voicing": 0.7662835249042146,
-                "ms": 545
+                "hz": 238.4406711619553,
+                "voicing": 0.9272030651340997,
+                "ms": 521
             },
             {
                 "lang": "en",
@@ -303,9 +303,9 @@
                 "quality": "high",
                 "gender": null,
                 "novelty": null,
-                "hz": 141.66508821883826,
-                "voicing": 0.5102739726027398,
-                "ms": 613
+                "hz": 134.69495714541313,
+                "voicing": 0.8664383561643836,
+                "ms": 605
             },
             {
                 "lang": "en",
@@ -315,9 +315,9 @@
                 "quality": "high",
                 "gender": null,
                 "novelty": null,
-                "hz": 241.58223259887166,
-                "voicing": 0.7662835249042146,
-                "ms": 172
+                "hz": 97.44630657580943,
+                "voicing": 0.6984126984126984,
+                "ms": 1107
             },
             {
                 "lang": "en",
@@ -327,9 +327,9 @@
                 "quality": "high",
                 "gender": null,
                 "novelty": null,
-                "hz": 241.58223259887166,
-                "voicing": 0.7662835249042146,
-                "ms": 122
+                "hz": 238.4406711619553,
+                "voicing": 0.9272030651340997,
+                "ms": 172
             },
             {
                 "lang": "en",
@@ -339,9 +339,9 @@
                 "quality": "high",
                 "gender": null,
                 "novelty": null,
-                "hz": 160.47623010292537,
-                "voicing": 0.7733333333333333,
-                "ms": 883
+                "hz": 155.7176179999805,
+                "voicing": 0.9033333333333333,
+                "ms": 531
             },
             {
                 "lang": "en",
@@ -351,17 +351,17 @@
                 "quality": "high",
                 "gender": null,
                 "novelty": null,
-                "hz": 158.82240038568176,
-                "voicing": 0.36900369003690037,
-                "ms": 450
+                "hz": 147.36365658236417,
+                "voicing": 0.8044280442804428,
+                "ms": 485
             }
         ],
-        "jaMs": 2027,
+        "jaMs": 2183,
         "jaPicked": {
-            "low": null,
+            "low": "ja-jp-x-jac-local",
             "high": "ja-jp-x-jad-local"
         },
-        "enMs": 6318,
+        "enMs": 6795,
         "enPicked": {
             "low": "en-us-x-iom-local",
             "high": "en-us-x-tpf-local"
