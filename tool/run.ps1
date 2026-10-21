@@ -1,11 +1,14 @@
 # Builds the example on Windows and runs it once in the interactive desktop
 # session (GUI apps started from SSH's session 0 die). Copy the repository
 # first (without build directories), then from its root:
-#   powershell -ExecutionPolicy Bypass -File tool\run.ps1 [-ModelDir <whisper model folder>] [-NoAsr]
+#   powershell -ExecutionPolicy Bypass -File tool\run.ps1 [-ModelDir <whisper model folder>] [-NoAsr] [-Config <json>]
+# Pass -Config from the same PowerShell (& .\tool\run.ps1 -Config '{"exit":true}'): through another
+# powershell.exe the JSON loses its double quotes.
 param(
   [string]$ModelDir = '',
   [switch]$NoAsr,
-  [switch]$SkipBuild
+  [switch]$SkipBuild,
+  [string]$Config = ''
 )
 $ErrorActionPreference = 'Stop'
 $lab = Split-Path -Parent $PSScriptRoot
@@ -27,7 +30,7 @@ if (-not $SkipBuild) {
 $exe = Join-Path $app 'build\windows\x64\runner\Release\tts_pcm_example.exe'
 $result = Join-Path $env:TEMP 'tts_result.json'
 Remove-Item $result -ErrorAction SilentlyContinue
-$config = if ($NoAsr) { '{"exit":true,"asr":false}' } else { '{"exit":true}' }
+$config = if ($Config) { $Config } elseif ($NoAsr) { '{"exit":true,"asr":false}' } else { '{"exit":true}' }
 $cmd = Join-Path $lab 'build\run-tts.cmd'
 @"
 @echo off

@@ -188,6 +188,67 @@ class _ProbePageState extends State<ProbePage> {
     }
   }
 
+  /// The pitch of every Japanese and English voice the device has (not those
+  /// that need the network or are not installed), and the voices picked.
+  ///
+  /// With `pitchWavDir` in the configuration, each sample is also written
+  /// there as a WAV (to check the estimate with another tool).
+  Future<void> _pitch(
+    Map<String, Object?> report,
+    Map<String, Object?> config,
+  ) async {
+    final out = <String, Object?>{};
+    for (final lang in ['ja', 'en']) {
+      final voices = await _tts.voices(language: lang);
+      final measurable = [
+        for (final v in voices)
+          if (!v.requiresNetwork && v.native['notInstalled'] != true) v,
+      ];
+      final sw = Stopwatch()..start();
+      final pitches = <TtsVoicePitch>[];
+      for (final v in measurable) {
+        _set('pitch ${v.name}');
+        final one = Stopwatch()..start();
+        final p = await _tts.measurePitch(v);
+        pitches.add(p);
+        if (config['pitchWavDir'] case final String dir) {
+          final (_, pcm, rate) = await _synth(
+            sampleSentences[lang]!,
+            voice: v.id,
+          );
+          if (pcm != null) {
+            await saveWav(
+              '$lang-${v.name.replaceAll(RegExp(r'[^A-Za-z0-9-]'), '_')}.wav',
+              pcm,
+              rate,
+              dir: dir,
+            );
+          }
+        }
+        final list = (out['voices'] ??= <Object?>[]) as List<Object?>;
+        list.add({
+          'lang': lang,
+          'name': v.name,
+          'id': v.id,
+          'language': v.language,
+          'quality': v.quality?.name,
+          'gender': v.gender?.name,
+          'novelty': v.native['novelty'],
+          'hz': p.hz,
+          'voicing': p.voicing,
+          'ms': one.elapsedMilliseconds,
+          if (p.error != null) 'error': p.error,
+        });
+      }
+      out['${lang}Ms'] = sw.elapsedMilliseconds;
+      out['${lang}Picked'] = {
+        for (final s in TtsPitch.values)
+          s.name: pickVoice(voices, pitches, s)?.name,
+      };
+    }
+    report['pitch'] = out;
+  }
+
   Future<void> _run(Map<String, Object?> config) async {
     final report = <String, Object?>{'platform': platformName()};
     final asr = config['asr'] != false;
@@ -226,6 +287,14 @@ class _ProbePageState extends State<ProbePage> {
       };
     } catch (e) {
       report['voicesError'] = '$e';
+    }
+
+    if (config['pitch'] != false) await _pitch(report, config);
+    if (config['pitchOnly'] == true) {
+      writeResult(jsonEncode(report));
+      _set('done');
+      if (config['exit'] == true) exitApp();
+      return;
     }
 
     if (asr) {

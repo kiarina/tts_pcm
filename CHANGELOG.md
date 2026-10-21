@@ -1,3 +1,15 @@
+## 0.2.0
+
+- `TtsPcm.instance.measurePitch(voice)` speaks a sample sentence with a voice (nothing is played) and
+  measures how high it sounds: `TtsVoicePitch` (median F0 in Hz, the share of voiced frames). Plain
+  data with `toJson` / `fromJson`, for the caller to keep. `measurePitches(voices, known:)` measures
+  only voices not measured yet.
+- `pickVoice(voices, pitches, TtsPitch.low | TtsPitch.high, {targetHz})` picks a lower or a higher
+  voice: on its side of 165 Hz, of the highest quality there, the closest to 120 / 220 Hz (or
+  `targetHz`). Skips Apple's novelty voices and Android voices that need the network or are not
+  installed; null when none is left.
+- `estimatePitch(samples, sampleRate)`: the estimator itself (YIN on 8 kHz, pure Dart).
+
 ## 0.1.0
 
 First release.

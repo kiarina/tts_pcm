@@ -1,0 +1,860 @@
+{
+    "platform": "ios",
+    "voicesMs": 129,
+    "voiceCount": 193,
+    "jaVoices": [
+        {
+            "id": "com.apple.voice.compact.ja-JP.Kyoko",
+            "name": "Kyoko",
+            "language": "ja-JP",
+            "quality": "low",
+            "gender": "female",
+            "requiresNetwork": false,
+            "native": {
+                "quality": "default",
+                "gender": "female",
+                "personal": false,
+                "novelty": false
+            }
+        },
+        {
+            "id": "com.apple.eloquence.ja-JP.Eddy",
+            "name": "Eddy",
+            "language": "ja-JP",
+            "quality": "low",
+            "gender": null,
+            "requiresNetwork": false,
+            "native": {
+                "personal": false,
+                "novelty": false,
+                "gender": "unspecified",
+                "quality": "default"
+            }
+        },
+        {
+            "id": "com.apple.eloquence.ja-JP.Flo",
+            "name": "Flo",
+            "language": "ja-JP",
+            "quality": "low",
+            "gender": null,
+            "requiresNetwork": false,
+            "native": {
+                "personal": false,
+                "quality": "default",
+                "gender": "unspecified",
+                "novelty": false
+            }
+        },
+        {
+            "id": "com.apple.eloquence.ja-JP.Grandma",
+            "name": "Grandma",
+            "language": "ja-JP",
+            "quality": "low",
+            "gender": null,
+            "requiresNetwork": false,
+            "native": {
+                "personal": false,
+                "gender": "unspecified",
+                "novelty": false,
+                "quality": "default"
+            }
+        },
+        {
+            "id": "com.apple.eloquence.ja-JP.Grandpa",
+            "name": "Grandpa",
+            "language": "ja-JP",
+            "quality": "low",
+            "gender": null,
+            "requiresNetwork": false,
+            "native": {
+                "gender": "unspecified",
+                "quality": "default",
+                "personal": false,
+                "novelty": false
+            }
+        },
+        {
+            "id": "com.apple.eloquence.ja-JP.Reed",
+            "name": "Reed",
+            "language": "ja-JP",
+            "quality": "low",
+            "gender": null,
+            "requiresNetwork": false,
+            "native": {
+                "personal": false,
+                "novelty": false,
+                "quality": "default",
+                "gender": "unspecified"
+            }
+        },
+        {
+            "id": "com.apple.eloquence.ja-JP.Rocko",
+            "name": "Rocko",
+            "language": "ja-JP",
+            "quality": "low",
+            "gender": null,
+            "requiresNetwork": false,
+            "native": {
+                "gender": "unspecified",
+                "personal": false,
+                "novelty": false,
+                "quality": "default"
+            }
+        },
+        {
+            "id": "com.apple.eloquence.ja-JP.Sandy",
+            "name": "Sandy",
+            "language": "ja-JP",
+            "quality": "low",
+            "gender": null,
+            "requiresNetwork": false,
+            "native": {
+                "gender": "unspecified",
+                "quality": "default",
+                "novelty": false,
+                "personal": false
+            }
+        },
+        {
+            "id": "com.apple.eloquence.ja-JP.Shelley",
+            "name": "Shelley",
+            "language": "ja-JP",
+            "quality": "low",
+            "gender": null,
+            "requiresNetwork": false,
+            "native": {
+                "quality": "default",
+                "gender": "unspecified",
+                "personal": false,
+                "novelty": false
+            }
+        },
+        {
+            "id": "com.apple.ttsbundle.siri_O-ren_ja-JP_compact",
+            "name": "O-ren",
+            "language": "ja-JP",
+            "quality": "low",
+            "gender": "female",
+            "requiresNetwork": false,
+            "native": {
+                "quality": "default",
+                "personal": false,
+                "novelty": false,
+                "gender": "female"
+            }
+        }
+    ],
+    "enVoiceCount": 47,
+    "voiceFields": {
+        "quality": {
+            "low": 193
+        },
+        "gender": {
+            "female": 51,
+            "null": 130,
+            "male": 12
+        },
+        "requiresNetwork": {
+            "false": 193
+        },
+        "malformedLanguage": []
+    },
+    "pitch": {
+        "voices": [
+            {
+                "lang": "ja",
+                "name": "Kyoko",
+                "id": "com.apple.voice.compact.ja-JP.Kyoko",
+                "language": "ja-JP",
+                "quality": "low",
+                "gender": "female",
+                "novelty": false,
+                "hz": 264.466540532196,
+                "voicing": 0.8553054662379421,
+                "ms": 1925
+            },
+            {
+                "lang": "ja",
+                "name": "Eddy",
+                "id": "com.apple.eloquence.ja-JP.Eddy",
+                "language": "ja-JP",
+                "quality": "low",
+                "gender": null,
+                "novelty": false,
+                "hz": 106.86350495327366,
+                "voicing": 0.43448275862068964,
+                "ms": 200
+            },
+            {
+                "lang": "ja",
+                "name": "Flo",
+                "id": "com.apple.eloquence.ja-JP.Flo",
+                "language": "ja-JP",
+                "quality": "low",
+                "gender": null,
+                "novelty": false,
+                "hz": 233.05428174464106,
+                "voicing": 0.7311827956989247,
+                "ms": 98
+            },
+            {
+                "lang": "ja",
+                "name": "Grandma",
+                "id": "com.apple.eloquence.ja-JP.Grandma",
+                "language": "ja-JP",
+                "quality": "low",
+                "gender": null,
+                "novelty": false,
+                "hz": 103.99577660185594,
+                "voicing": 0.5956678700361011,
+                "ms": 98
+            },
+            {
+                "lang": "ja",
+                "name": "Grandpa",
+                "id": "com.apple.eloquence.ja-JP.Grandpa",
+                "language": "ja-JP",
+                "quality": "low",
+                "gender": null,
+                "novelty": false,
+                "hz": 81.34631586411295,
+                "voicing": 0.2560553633217993,
+                "ms": 97
+            },
+            {
+                "lang": "ja",
+                "name": "Reed",
+                "id": "com.apple.eloquence.ja-JP.Reed",
+                "language": "ja-JP",
+                "quality": "low",
+                "gender": null,
+                "novelty": false,
+                "hz": 94.31478302685049,
+                "voicing": 0.4387755102040816,
+                "ms": 98
+            },
+            {
+                "lang": "ja",
+                "name": "Rocko",
+                "id": "com.apple.eloquence.ja-JP.Rocko",
+                "language": "ja-JP",
+                "quality": "low",
+                "gender": null,
+                "novelty": false,
+                "hz": 67.78283351356258,
+                "voicing": 0.30313588850174217,
+                "ms": 98
+            },
+            {
+                "lang": "ja",
+                "name": "Sandy",
+                "id": "com.apple.eloquence.ja-JP.Sandy",
+                "language": "ja-JP",
+                "quality": "low",
+                "gender": null,
+                "novelty": false,
+                "hz": 259.46431815151846,
+                "voicing": 0.6592592592592592,
+                "ms": 98
+            },
+            {
+                "lang": "ja",
+                "name": "Shelley",
+                "id": "com.apple.eloquence.ja-JP.Shelley",
+                "language": "ja-JP",
+                "quality": "low",
+                "gender": null,
+                "novelty": false,
+                "hz": 169.80744155757742,
+                "voicing": 0.697841726618705,
+                "ms": 97
+            },
+            {
+                "lang": "ja",
+                "name": "O-ren",
+                "id": "com.apple.ttsbundle.siri_O-ren_ja-JP_compact",
+                "language": "ja-JP",
+                "quality": "low",
+                "gender": "female",
+                "novelty": false,
+                "hz": 265.87281219135303,
+                "voicing": 0.8576388888888888,
+                "ms": 809
+            },
+            {
+                "lang": "en",
+                "name": "Samantha",
+                "id": "com.apple.voice.compact.en-US.Samantha",
+                "language": "en-US",
+                "quality": "low",
+                "gender": "female",
+                "novelty": false,
+                "hz": 181.42577662702305,
+                "voicing": 0.7831715210355987,
+                "ms": 546
+            },
+            {
+                "lang": "en",
+                "name": "Daniel",
+                "id": "com.apple.voice.super-compact.en-GB.Daniel",
+                "language": "en-GB",
+                "quality": "low",
+                "gender": "male",
+                "novelty": false,
+                "hz": 115.51220456193853,
+                "voicing": 0.42024539877300615,
+                "ms": 356
+            },
+            {
+                "lang": "en",
+                "name": "Karen",
+                "id": "com.apple.voice.super-compact.en-AU.Karen",
+                "language": "en-AU",
+                "quality": "low",
+                "gender": "female",
+                "novelty": false,
+                "hz": 182.42649119949837,
+                "voicing": 0.8651315789473685,
+                "ms": 290
+            },
+            {
+                "lang": "en",
+                "name": "Moira",
+                "id": "com.apple.voice.super-compact.en-IE.Moira",
+                "language": "en-IE",
+                "quality": "low",
+                "gender": "female",
+                "novelty": false,
+                "hz": 189.07768164677236,
+                "voicing": 0.8561643835616438,
+                "ms": 382
+            },
+            {
+                "lang": "en",
+                "name": "Rishi",
+                "id": "com.apple.voice.super-compact.en-IN.Rishi",
+                "language": "en-IN",
+                "quality": "low",
+                "gender": "male",
+                "novelty": false,
+                "hz": 117.05509502429625,
+                "voicing": 0.7191780821917808,
+                "ms": 264
+            },
+            {
+                "lang": "en",
+                "name": "Tessa",
+                "id": "com.apple.voice.super-compact.en-ZA.Tessa",
+                "language": "en-ZA",
+                "quality": "low",
+                "gender": "female",
+                "novelty": false,
+                "hz": 179.59789088820443,
+                "voicing": 0.8598130841121495,
+                "ms": 249
+            },
+            {
+                "lang": "en",
+                "name": "Eddy",
+                "id": "com.apple.eloquence.en-GB.Eddy",
+                "language": "en-GB",
+                "quality": "low",
+                "gender": null,
+                "novelty": false,
+                "hz": 120.6809041514887,
+                "voicing": 0.5944055944055944,
+                "ms": 104
+            },
+            {
+                "lang": "en",
+                "name": "Eddy",
+                "id": "com.apple.eloquence.en-US.Eddy",
+                "language": "en-US",
+                "quality": "low",
+                "gender": null,
+                "novelty": false,
+                "hz": 120.14934853865115,
+                "voicing": 0.5179856115107914,
+                "ms": 100
+            },
+            {
+                "lang": "en",
+                "name": "Flo",
+                "id": "com.apple.eloquence.en-GB.Flo",
+                "language": "en-GB",
+                "quality": "low",
+                "gender": null,
+                "novelty": false,
+                "hz": 246.9411945548743,
+                "voicing": 0.8523985239852399,
+                "ms": 286
+            },
+            {
+                "lang": "en",
+                "name": "Flo",
+                "id": "com.apple.eloquence.en-US.Flo",
+                "language": "en-US",
+                "quality": "low",
+                "gender": null,
+                "novelty": false,
+                "hz": 247.52204053922975,
+                "voicing": 0.842911877394636,
+                "ms": 88
+            },
+            {
+                "lang": "en",
+                "name": "Grandma",
+                "id": "com.apple.eloquence.en-GB.Grandma",
+                "language": "en-GB",
+                "quality": "low",
+                "gender": null,
+                "novelty": false,
+                "hz": 118.96094546906862,
+                "voicing": 0.7689393939393939,
+                "ms": 90
+            },
+            {
+                "lang": "en",
+                "name": "Grandma",
+                "id": "com.apple.eloquence.en-US.Grandma",
+                "language": "en-US",
+                "quality": "low",
+                "gender": null,
+                "novelty": false,
+                "hz": 118.75952289316908,
+                "voicing": 0.7137404580152672,
+                "ms": 90
+            },
+            {
+                "lang": "en",
+                "name": "Grandpa",
+                "id": "com.apple.eloquence.en-GB.Grandpa",
+                "language": "en-GB",
+                "quality": "low",
+                "gender": null,
+                "novelty": false,
+                "hz": 89.96717268092077,
+                "voicing": 0.1625441696113074,
+                "ms": 260
+            },
+            {
+                "lang": "en",
+                "name": "Grandpa",
+                "id": "com.apple.eloquence.en-US.Grandpa",
+                "language": "en-US",
+                "quality": "low",
+                "gender": null,
+                "novelty": false,
+                "hz": 91.74637746078943,
+                "voicing": 0.1678832116788321,
+                "ms": 90
+            },
+            {
+                "lang": "en",
+                "name": "Reed",
+                "id": "com.apple.eloquence.en-GB.Reed",
+                "language": "en-GB",
+                "quality": "low",
+                "gender": null,
+                "novelty": false,
+                "hz": 107.72039132871839,
+                "voicing": 0.5719298245614035,
+                "ms": 89
+            },
+            {
+                "lang": "en",
+                "name": "Reed",
+                "id": "com.apple.eloquence.en-US.Reed",
+                "language": "en-US",
+                "quality": "low",
+                "gender": null,
+                "novelty": false,
+                "hz": 107.10537330800345,
+                "voicing": 0.5304659498207885,
+                "ms": 90
+            },
+            {
+                "lang": "en",
+                "name": "Rocko",
+                "id": "com.apple.eloquence.en-GB.Rocko",
+                "language": "en-GB",
+                "quality": "low",
+                "gender": null,
+                "novelty": false,
+                "hz": 78.81443879262413,
+                "voicing": 0.38267148014440433,
+                "ms": 91
+            },
+            {
+                "lang": "en",
+                "name": "Rocko",
+                "id": "com.apple.eloquence.en-US.Rocko",
+                "language": "en-US",
+                "quality": "low",
+                "gender": null,
+                "novelty": false,
+                "hz": 78.72056495655616,
+                "voicing": 0.3763837638376384,
+                "ms": 92
+            },
+            {
+                "lang": "en",
+                "name": "Sandy",
+                "id": "com.apple.eloquence.en-GB.Sandy",
+                "language": "en-GB",
+                "quality": "low",
+                "gender": null,
+                "novelty": false,
+                "hz": 289.5542166320984,
+                "voicing": 0.8533834586466166,
+                "ms": 91
+            },
+            {
+                "lang": "en",
+                "name": "Sandy",
+                "id": "com.apple.eloquence.en-US.Sandy",
+                "language": "en-US",
+                "quality": "low",
+                "gender": null,
+                "novelty": false,
+                "hz": 289.33716123639266,
+                "voicing": 0.8515625,
+                "ms": 90
+            },
+            {
+                "lang": "en",
+                "name": "Shelley",
+                "id": "com.apple.eloquence.en-GB.Shelley",
+                "language": "en-GB",
+                "quality": "low",
+                "gender": null,
+                "novelty": false,
+                "hz": 186.45813914464733,
+                "voicing": 0.8118081180811808,
+                "ms": 91
+            },
+            {
+                "lang": "en",
+                "name": "Shelley",
+                "id": "com.apple.eloquence.en-US.Shelley",
+                "language": "en-US",
+                "quality": "low",
+                "gender": null,
+                "novelty": false,
+                "hz": 185.8551406514669,
+                "voicing": 0.7992424242424242,
+                "ms": 91
+            },
+            {
+                "lang": "en",
+                "name": "Aaron",
+                "id": "com.apple.ttsbundle.siri_Aaron_en-US_compact",
+                "language": "en-US",
+                "quality": "low",
+                "gender": "male",
+                "novelty": false,
+                "hz": 132.71928654392744,
+                "voicing": 0.5671641791044776,
+                "ms": 693
+            },
+            {
+                "lang": "en",
+                "name": "Albert",
+                "id": "com.apple.speech.synthesis.voice.Albert",
+                "language": "en-US",
+                "quality": "low",
+                "gender": null,
+                "novelty": true,
+                "hz": 450.1105997686961,
+                "voicing": 0.2823834196891192,
+                "ms": 220
+            },
+            {
+                "lang": "en",
+                "name": "Arthur",
+                "id": "com.apple.ttsbundle.siri_Arthur_en-GB_compact",
+                "language": "en-GB",
+                "quality": "low",
+                "gender": "male",
+                "novelty": false,
+                "hz": 137.5838130725345,
+                "voicing": 0.6470588235294118,
+                "ms": 268
+            },
+            {
+                "lang": "en",
+                "name": "Bad News",
+                "id": "com.apple.speech.synthesis.voice.BadNews",
+                "language": "en-US",
+                "quality": "low",
+                "gender": null,
+                "novelty": true,
+                "hz": 64.5309506640888,
+                "voicing": 0.9019607843137255,
+                "ms": 239
+            },
+            {
+                "lang": "en",
+                "name": "Bahh",
+                "id": "com.apple.speech.synthesis.voice.Bahh",
+                "language": "en-US",
+                "quality": "low",
+                "gender": null,
+                "novelty": true,
+                "hz": null,
+                "voicing": 0.0,
+                "ms": 156
+            },
+            {
+                "lang": "en",
+                "name": "Bells",
+                "id": "com.apple.speech.synthesis.voice.Bells",
+                "language": "en-US",
+                "quality": "low",
+                "gender": null,
+                "novelty": true,
+                "hz": 96.63279023778502,
+                "voicing": 0.2649325626204239,
+                "ms": 297
+            },
+            {
+                "lang": "en",
+                "name": "Boing",
+                "id": "com.apple.speech.synthesis.voice.Boing",
+                "language": "en-US",
+                "quality": "low",
+                "gender": null,
+                "novelty": true,
+                "hz": 79.76343265602712,
+                "voicing": 0.12827225130890052,
+                "ms": 139
+            },
+            {
+                "lang": "en",
+                "name": "Bubbles",
+                "id": "com.apple.speech.synthesis.voice.Bubbles",
+                "language": "en-US",
+                "quality": "low",
+                "gender": null,
+                "novelty": true,
+                "hz": 506.76429159925743,
+                "voicing": 0.035256410256410256,
+                "ms": 114
+            },
+            {
+                "lang": "en",
+                "name": "Catherine",
+                "id": "com.apple.ttsbundle.siri_Catherine_en-AU_compact",
+                "language": "en-AU",
+                "quality": "low",
+                "gender": "female",
+                "novelty": false,
+                "hz": 200.28321563302504,
+                "voicing": 0.8746081504702194,
+                "ms": 284
+            },
+            {
+                "lang": "en",
+                "name": "Cellos",
+                "id": "com.apple.speech.synthesis.voice.Cellos",
+                "language": "en-US",
+                "quality": "low",
+                "gender": null,
+                "novelty": true,
+                "hz": 91.61596546368582,
+                "voicing": 0.7681818181818182,
+                "ms": 197
+            },
+            {
+                "lang": "en",
+                "name": "Wobble",
+                "id": "com.apple.speech.synthesis.voice.Deranged",
+                "language": "en-US",
+                "quality": "low",
+                "gender": null,
+                "novelty": true,
+                "hz": 270.0944502132304,
+                "voicing": 0.19117647058823528,
+                "ms": 127
+            },
+            {
+                "lang": "en",
+                "name": "Fred",
+                "id": "com.apple.speech.synthesis.voice.Fred",
+                "language": "en-US",
+                "quality": "low",
+                "gender": "male",
+                "novelty": false,
+                "hz": 100.51198742667806,
+                "voicing": 0.676923076923077,
+                "ms": 119
+            },
+            {
+                "lang": "en",
+                "name": "Good News",
+                "id": "com.apple.speech.synthesis.voice.GoodNews",
+                "language": "en-US",
+                "quality": "low",
+                "gender": null,
+                "novelty": true,
+                "hz": 232.07708607525376,
+                "voicing": 0.9503105590062112,
+                "ms": 339
+            },
+            {
+                "lang": "en",
+                "name": "Gordon",
+                "id": "com.apple.ttsbundle.siri_Gordon_en-AU_compact",
+                "language": "en-AU",
+                "quality": "low",
+                "gender": "male",
+                "novelty": false,
+                "hz": 129.87994565282605,
+                "voicing": 0.6134453781512605,
+                "ms": 270
+            },
+            {
+                "lang": "en",
+                "name": "Jester",
+                "id": "com.apple.speech.synthesis.voice.Hysterical",
+                "language": "en-US",
+                "quality": "low",
+                "gender": null,
+                "novelty": true,
+                "hz": 344.5764249082283,
+                "voicing": 0.09080459770114943,
+                "ms": 265
+            },
+            {
+                "lang": "en",
+                "name": "Junior",
+                "id": "com.apple.speech.synthesis.voice.Junior",
+                "language": "en-US",
+                "quality": "low",
+                "gender": null,
+                "novelty": false,
+                "hz": 208.13889780495182,
+                "voicing": 0.8731563421828908,
+                "ms": 125
+            },
+            {
+                "lang": "en",
+                "name": "Kathy",
+                "id": "com.apple.speech.synthesis.voice.Kathy",
+                "language": "en-US",
+                "quality": "low",
+                "gender": null,
+                "novelty": false,
+                "hz": 208.44096336809486,
+                "voicing": 0.8621700879765396,
+                "ms": 124
+            },
+            {
+                "lang": "en",
+                "name": "Martha",
+                "id": "com.apple.ttsbundle.siri_Martha_en-GB_compact",
+                "language": "en-GB",
+                "quality": "low",
+                "gender": "female",
+                "novelty": false,
+                "hz": 208.41150426966897,
+                "voicing": 0.8881578947368421,
+                "ms": 281
+            },
+            {
+                "lang": "en",
+                "name": "Nicky",
+                "id": "com.apple.ttsbundle.siri_Nicky_en-US_compact",
+                "language": "en-US",
+                "quality": "low",
+                "gender": "female",
+                "novelty": false,
+                "hz": 174.7073185137883,
+                "voicing": 0.7640449438202247,
+                "ms": 489
+            },
+            {
+                "lang": "en",
+                "name": "Organ",
+                "id": "com.apple.speech.synthesis.voice.Organ",
+                "language": "en-US",
+                "quality": "low",
+                "gender": null,
+                "novelty": true,
+                "hz": 90.77374967791373,
+                "voicing": 0.2520891364902507,
+                "ms": 209
+            },
+            {
+                "lang": "en",
+                "name": "Superstar",
+                "id": "com.apple.speech.synthesis.voice.Princess",
+                "language": "en-US",
+                "quality": "low",
+                "gender": null,
+                "novelty": true,
+                "hz": 239.63603076634064,
+                "voicing": 0.8869047619047619,
+                "ms": 124
+            },
+            {
+                "lang": "en",
+                "name": "Ralph",
+                "id": "com.apple.speech.synthesis.voice.Ralph",
+                "language": "en-US",
+                "quality": "low",
+                "gender": null,
+                "novelty": false,
+                "hz": 66.58397442479372,
+                "voicing": 0.37575757575757573,
+                "ms": 122
+            },
+            {
+                "lang": "en",
+                "name": "Trinoids",
+                "id": "com.apple.speech.synthesis.voice.Trinoids",
+                "language": "en-US",
+                "quality": "low",
+                "gender": null,
+                "novelty": true,
+                "hz": 212.5943675307792,
+                "voicing": 0.19631901840490798,
+                "ms": 120
+            },
+            {
+                "lang": "en",
+                "name": "Whisper",
+                "id": "com.apple.speech.synthesis.voice.Whisper",
+                "language": "en-US",
+                "quality": "low",
+                "gender": null,
+                "novelty": true,
+                "hz": null,
+                "voicing": 0.0,
+                "ms": 127
+            },
+            {
+                "lang": "en",
+                "name": "Zarvox",
+                "id": "com.apple.speech.synthesis.voice.Zarvox",
+                "language": "en-US",
+                "quality": "low",
+                "gender": null,
+                "novelty": true,
+                "hz": 89.54854767439421,
+                "voicing": 0.564179104477612,
+                "ms": 123
+            }
+        ],
+        "jaMs": 3622,
+        "jaPicked": {
+            "low": "Eddy",
+            "high": "Flo"
+        },
+        "enMs": 9516,
+        "enPicked": {
+            "low": "Eddy",
+            "high": "Kathy"
+        }
+    }
+}

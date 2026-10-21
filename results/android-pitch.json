@@ -1,0 +1,370 @@
+{
+    "platform": "android",
+    "voicesMs": 986,
+    "voiceCount": 474,
+    "jaVoices": [
+        {
+            "id": "ja-JP-language",
+            "name": "ja-JP-language",
+            "language": "ja-JP",
+            "quality": "high",
+            "gender": null,
+            "requiresNetwork": false,
+            "native": {
+                "quality": 400,
+                "latency": 200,
+                "features": [
+                    "legacySetLanguageVoice",
+                    "networkRetriesCount",
+                    "networkTimeoutMs"
+                ],
+                "notInstalled": false
+            }
+        },
+        {
+            "id": "ja-jp-x-jab-network",
+            "name": "ja-jp-x-jab-network",
+            "language": "ja-JP",
+            "quality": "high",
+            "gender": null,
+            "requiresNetwork": true,
+            "native": {
+                "quality": 400,
+                "latency": 200,
+                "features": [
+                    "networkRetriesCount",
+                    "networkTimeoutMs"
+                ],
+                "notInstalled": false
+            }
+        },
+        {
+            "id": "ja-jp-x-htm-network",
+            "name": "ja-jp-x-htm-network",
+            "language": "ja-JP",
+            "quality": "high",
+            "gender": null,
+            "requiresNetwork": true,
+            "native": {
+                "quality": 400,
+                "latency": 200,
+                "features": [
+                    "networkRetriesCount",
+                    "networkTimeoutMs"
+                ],
+                "notInstalled": false
+            }
+        },
+        {
+            "id": "ja-jp-x-jad-network",
+            "name": "ja-jp-x-jad-network",
+            "language": "ja-JP",
+            "quality": "high",
+            "gender": null,
+            "requiresNetwork": true,
+            "native": {
+                "quality": 400,
+                "latency": 200,
+                "features": [
+                    "networkRetriesCount",
+                    "networkTimeoutMs"
+                ],
+                "notInstalled": false
+            }
+        },
+        {
+            "id": "ja-jp-x-jab-local",
+            "name": "ja-jp-x-jab-local",
+            "language": "ja-JP",
+            "quality": "high",
+            "gender": null,
+            "requiresNetwork": false,
+            "native": {
+                "quality": 400,
+                "latency": 200,
+                "features": [
+                    "networkRetriesCount",
+                    "networkTimeoutMs"
+                ],
+                "notInstalled": false
+            }
+        },
+        {
+            "id": "ja-jp-x-jad-local",
+            "name": "ja-jp-x-jad-local",
+            "language": "ja-JP",
+            "quality": "high",
+            "gender": null,
+            "requiresNetwork": false,
+            "native": {
+                "quality": 400,
+                "latency": 200,
+                "features": [
+                    "networkRetriesCount",
+                    "networkTimeoutMs"
+                ],
+                "notInstalled": false
+            }
+        },
+        {
+            "id": "ja-jp-x-jac-local",
+            "name": "ja-jp-x-jac-local",
+            "language": "ja-JP",
+            "quality": "high",
+            "gender": null,
+            "requiresNetwork": false,
+            "native": {
+                "quality": 400,
+                "latency": 200,
+                "features": [
+                    "networkRetriesCount",
+                    "networkTimeoutMs"
+                ],
+                "notInstalled": false
+            }
+        },
+        {
+            "id": "ja-jp-x-jac-network",
+            "name": "ja-jp-x-jac-network",
+            "language": "ja-JP",
+            "quality": "high",
+            "gender": null,
+            "requiresNetwork": true,
+            "native": {
+                "quality": 400,
+                "latency": 200,
+                "features": [
+                    "networkRetriesCount",
+                    "networkTimeoutMs"
+                ],
+                "notInstalled": false
+            }
+        },
+        {
+            "id": "ja-jp-x-htm-local",
+            "name": "ja-jp-x-htm-local",
+            "language": "ja-JP",
+            "quality": "high",
+            "gender": null,
+            "requiresNetwork": false,
+            "native": {
+                "quality": 400,
+                "latency": 200,
+                "features": [
+                    "networkRetriesCount",
+                    "networkTimeoutMs"
+                ],
+                "notInstalled": false
+            }
+        }
+    ],
+    "enVoiceCount": 52,
+    "voiceFields": {
+        "quality": {
+            "high": 468,
+            "low": 6
+        },
+        "gender": {
+            "null": 474
+        },
+        "requiresNetwork": {
+            "false": 285,
+            "true": 189
+        },
+        "malformedLanguage": []
+    },
+    "pitch": {
+        "voices": [
+            {
+                "lang": "ja",
+                "name": "ja-JP-language",
+                "id": "ja-JP-language",
+                "language": "ja-JP",
+                "quality": "high",
+                "gender": null,
+                "novelty": null,
+                "hz": 297.66292729433945,
+                "voicing": 0.7476923076923077,
+                "ms": 742
+            },
+            {
+                "lang": "ja",
+                "name": "ja-jp-x-jab-local",
+                "id": "ja-jp-x-jab-local",
+                "language": "ja-JP",
+                "quality": "high",
+                "gender": null,
+                "novelty": null,
+                "hz": 297.66292729433945,
+                "voicing": 0.7476923076923077,
+                "ms": 113
+            },
+            {
+                "lang": "ja",
+                "name": "ja-jp-x-jad-local",
+                "id": "ja-jp-x-jad-local",
+                "language": "ja-JP",
+                "quality": "high",
+                "gender": null,
+                "novelty": null,
+                "hz": 189.59324799889004,
+                "voicing": 0.5189873417721519,
+                "ms": 411
+            },
+            {
+                "lang": "ja",
+                "name": "ja-jp-x-jac-local",
+                "id": "ja-jp-x-jac-local",
+                "language": "ja-JP",
+                "quality": "high",
+                "gender": null,
+                "novelty": null,
+                "hz": 176.59995966542806,
+                "voicing": 0.4721311475409836,
+                "ms": 459
+            },
+            {
+                "lang": "ja",
+                "name": "ja-jp-x-htm-local",
+                "id": "ja-jp-x-htm-local",
+                "language": "ja-JP",
+                "quality": "high",
+                "gender": null,
+                "novelty": null,
+                "hz": 311.5470116060911,
+                "voicing": 0.6762177650429799,
+                "ms": 300
+            },
+            {
+                "lang": "en",
+                "name": "en-us-x-tpf-local",
+                "id": "en-us-x-tpf-local",
+                "language": "en-US",
+                "quality": "high",
+                "gender": null,
+                "novelty": null,
+                "hz": 217.38497920501084,
+                "voicing": 0.7773851590106007,
+                "ms": 957
+            },
+            {
+                "lang": "en",
+                "name": "en-us-x-sfg-local",
+                "id": "en-us-x-sfg-local",
+                "language": "en-US",
+                "quality": "high",
+                "gender": null,
+                "novelty": null,
+                "hz": 227.92856130324517,
+                "voicing": 0.7023809523809523,
+                "ms": 1171
+            },
+            {
+                "lang": "en",
+                "name": "en-us-x-iob-local",
+                "id": "en-us-x-iob-local",
+                "language": "en-US",
+                "quality": "high",
+                "gender": null,
+                "novelty": null,
+                "hz": 203.19812552976194,
+                "voicing": 0.6877192982456141,
+                "ms": 909
+            },
+            {
+                "lang": "en",
+                "name": "en-us-x-iom-local",
+                "id": "en-us-x-iom-local",
+                "language": "en-US",
+                "quality": "high",
+                "gender": null,
+                "novelty": null,
+                "hz": 138.83332452490836,
+                "voicing": 0.4479166666666667,
+                "ms": 490
+            },
+            {
+                "lang": "en",
+                "name": "en-US-language",
+                "id": "en-US-language",
+                "language": "en-US",
+                "quality": "high",
+                "gender": null,
+                "novelty": null,
+                "hz": 241.58223259887166,
+                "voicing": 0.7662835249042146,
+                "ms": 545
+            },
+            {
+                "lang": "en",
+                "name": "en-us-x-tpd-local",
+                "id": "en-us-x-tpd-local",
+                "language": "en-US",
+                "quality": "high",
+                "gender": null,
+                "novelty": null,
+                "hz": 141.66508821883826,
+                "voicing": 0.5102739726027398,
+                "ms": 613
+            },
+            {
+                "lang": "en",
+                "name": "en-us-x-msm00013-local",
+                "id": "en-us-x-msm00013-local",
+                "language": "en-US",
+                "quality": "high",
+                "gender": null,
+                "novelty": null,
+                "hz": 241.58223259887166,
+                "voicing": 0.7662835249042146,
+                "ms": 172
+            },
+            {
+                "lang": "en",
+                "name": "en-us-x-iog-local",
+                "id": "en-us-x-iog-local",
+                "language": "en-US",
+                "quality": "high",
+                "gender": null,
+                "novelty": null,
+                "hz": 241.58223259887166,
+                "voicing": 0.7662835249042146,
+                "ms": 122
+            },
+            {
+                "lang": "en",
+                "name": "en-us-x-tpc-local",
+                "id": "en-us-x-tpc-local",
+                "language": "en-US",
+                "quality": "high",
+                "gender": null,
+                "novelty": null,
+                "hz": 160.47623010292537,
+                "voicing": 0.7733333333333333,
+                "ms": 883
+            },
+            {
+                "lang": "en",
+                "name": "en-us-x-iol-local",
+                "id": "en-us-x-iol-local",
+                "language": "en-US",
+                "quality": "high",
+                "gender": null,
+                "novelty": null,
+                "hz": 158.82240038568176,
+                "voicing": 0.36900369003690037,
+                "ms": 450
+            }
+        ],
+        "jaMs": 2027,
+        "jaPicked": {
+            "low": null,
+            "high": "ja-jp-x-jad-local"
+        },
+        "enMs": 6318,
+        "enPicked": {
+            "low": "en-us-x-iom-local",
+            "high": "en-us-x-tpf-local"
+        }
+    }
+}

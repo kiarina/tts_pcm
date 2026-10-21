@@ -1,0 +1,104 @@
+{
+    "platform": "windows",
+    "voicesMs": 14,
+    "voiceCount": 3,
+    "jaVoices": [
+        {
+            "id": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Speech_OneCore\\Voices\\Tokens\\MSTTS_V110_jaJP_AyumiM",
+            "name": "Microsoft Ayumi",
+            "language": "ja-JP",
+            "quality": null,
+            "gender": "female",
+            "requiresNetwork": false,
+            "native": {
+                "description": "Microsoft Ayumi - Japanese (Japan)"
+            }
+        },
+        {
+            "id": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Speech_OneCore\\Voices\\Tokens\\MSTTS_V110_jaJP_HarukaM",
+            "name": "Microsoft Haruka",
+            "language": "ja-JP",
+            "quality": null,
+            "gender": "female",
+            "requiresNetwork": false,
+            "native": {
+                "description": "Microsoft Haruka - Japanese (Japan)"
+            }
+        },
+        {
+            "id": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Speech_OneCore\\Voices\\Tokens\\MSTTS_V110_jaJP_IchiroM",
+            "name": "Microsoft Ichiro",
+            "language": "ja-JP",
+            "quality": null,
+            "gender": "male",
+            "requiresNetwork": false,
+            "native": {
+                "description": "Microsoft Ichiro - Japanese (Japan)"
+            }
+        }
+    ],
+    "enVoiceCount": 0,
+    "voiceFields": {
+        "quality": {
+            "null": 3
+        },
+        "gender": {
+            "female": 2,
+            "male": 1
+        },
+        "requiresNetwork": {
+            "false": 3
+        },
+        "malformedLanguage": []
+    },
+    "pitch": {
+        "voices": [
+            {
+                "lang": "ja",
+                "name": "Microsoft Ayumi",
+                "id": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Speech_OneCore\\Voices\\Tokens\\MSTTS_V110_jaJP_AyumiM",
+                "language": "ja-JP",
+                "quality": null,
+                "gender": "female",
+                "novelty": null,
+                "hz": 249.62974087796024,
+                "voicing": 0.8146964856230032,
+                "ms": 145
+            },
+            {
+                "lang": "ja",
+                "name": "Microsoft Haruka",
+                "id": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Speech_OneCore\\Voices\\Tokens\\MSTTS_V110_jaJP_HarukaM",
+                "language": "ja-JP",
+                "quality": null,
+                "gender": "female",
+                "novelty": null,
+                "hz": 230.47057946574225,
+                "voicing": 0.8910505836575876,
+                "ms": 92
+            },
+            {
+                "lang": "ja",
+                "name": "Microsoft Ichiro",
+                "id": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Speech_OneCore\\Voices\\Tokens\\MSTTS_V110_jaJP_IchiroM",
+                "language": "ja-JP",
+                "quality": null,
+                "gender": "male",
+                "novelty": null,
+                "hz": 126.58404492918949,
+                "voicing": 0.5559006211180124,
+                "ms": 118
+            }
+        ],
+        "jaMs": 356,
+        "jaPicked": {
+            "low": "Microsoft Ichiro",
+            "high": "Microsoft Haruka"
+        },
+        "enMs": 0,
+        "enPicked": {
+            "low": null,
+            "high": null
+        }
+    }
+}

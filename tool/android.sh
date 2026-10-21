@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 # Installs the example (release) on the connected Android device, runs it once and
 # writes results/android-<label>.json. Run from the repository root.
-# ANDROID_SERIAL picks the device when more than one is connected.
+# ANDROID_SERIAL picks the device when more than one is connected. TTS_CONFIG overrides
+# the configuration (default {"exit":true}).
 set -euo pipefail
 label=${1:-1}
 adb=${ADB:-adb}
@@ -10,7 +11,7 @@ pkg=jp.kiarina.tts_pcm_example
 "$adb" install -r example/build/app/outputs/flutter-apk/app-release.apk
 "$adb" shell am force-stop $pkg
 "$adb" logcat -c
-cfg=$(python3 -c "import base64;print(base64.urlsafe_b64encode(b'{\"exit\":true}').decode())")
+cfg=$(TTS_CONFIG=${TTS_CONFIG:-'{"exit":true}'} python3 -c "import base64,os;print(base64.urlsafe_b64encode(os.environ['TTS_CONFIG'].encode()).decode())")
 "$adb" shell am start -n $pkg/.MainActivity --es config "$cfg" >/dev/null
 mkdir -p results
 for _ in $(seq 1 120); do

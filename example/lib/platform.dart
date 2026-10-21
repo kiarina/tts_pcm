@@ -43,9 +43,14 @@ void writeResult(String json) {
 void exitApp() => exit(0);
 
 /// Synthesized audio kept on the device for listening (not committed).
-Future<void> saveWav(String name, Int16List pcm, int rate) async {
-  final dir = Directory('${Directory.systemTemp.path}/tts_wavs');
-  await dir.create(recursive: true);
+Future<void> saveWav(
+  String name,
+  Int16List pcm,
+  int rate, {
+  String? dir,
+}) async {
+  final folder = Directory(dir ?? '${Directory.systemTemp.path}/tts_wavs');
+  await folder.create(recursive: true);
   final data = ByteData(44 + pcm.length * 2);
   void ascii(int o, String s) {
     for (var i = 0; i < s.length; i++) {
@@ -68,5 +73,5 @@ Future<void> saveWav(String name, Int16List pcm, int rate) async {
   for (var i = 0; i < pcm.length; i++) {
     data.setInt16(44 + i * 2, pcm[i], Endian.little);
   }
-  await File('${dir.path}/$name').writeAsBytes(data.buffer.asUint8List());
+  await File('${folder.path}/$name').writeAsBytes(data.buffer.asUint8List());
 }

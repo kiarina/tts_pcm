@@ -30,3 +30,9 @@ for p in [Path(a) for a in sys.argv[1:]] or sorted((ROOT / "results").glob("*.js
     print(f"  cancel: late chunks {c.get('chunksAfterCancel')}, next ok {n.get('audioMs')} ms audio"
           + (f" ERROR {c['error']}" if 'error' in c else "") + (f" next ERROR {n['error']}" if 'error' in n else ""))
     print("  concurrent: " + ", ".join(f"{x.get('audioMs')} ms audio in {x.get('totalMs')} ms" + (f" ERROR {x['error']}" if 'error' in x else "") for x in d.get("concurrent", [])))
+    p = d.get("pitch")
+    if p:
+        for lang in ("ja", "en"):
+            vs = [v for v in p.get("voices", []) if v["lang"] == lang and not v.get("novelty")]
+            print(f"  pitch {lang} ({p.get(lang + 'Ms')} ms): picked {p.get(lang + 'Picked')}; "
+                  + ", ".join(f"{v['name']} {round(v['hz']) if v['hz'] else None}" for v in vs))
